@@ -3,7 +3,7 @@
 }
 @font-face {
     font-family: 'Pixellari';
-    src: url(/assets/Pixellari.ttf);
+    src: url(./assets/Pixellari.ttf);
 }
 :root {
   --lb: #a3d7ff;
@@ -50,7 +50,7 @@ main, .flex {
     justify-content: center;
 }
 #welcome {
-    background: url(/assets/welcome.png);
+    background: url(./assets/welcome.png);
     background-size: cover;
     width: 25rem;
     height: 12rem;
