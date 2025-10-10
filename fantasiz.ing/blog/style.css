@@ -1,0 +1,99 @@
+main {
+  background: linear-gradient(to bottom, var(--black) 50%, var(--dp));
+  width: 50rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  gap: 1rem;
+  border: 0.1rem solid var(--dp);
+  position: relative;
+}
+main::before {
+  content: "blog";
+  position: absolute;
+  top: -2rem;
+  left: 1rem;
+  color: var(--lb);
+  font-size: 150%;
+  font-style: italic;
+}
+#back {
+  background: linear-gradient(to bottom, var(--p), var(--dp));
+  width: 10em;
+  padding: 1rem 3.2rem;
+  text-align: center;
+  color: var(--lb);
+  transition: 0.2s;
+  display: inline-block;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+#back:hover {
+  color: var(--white);
+  filter: brightness(0.7) contrast(150%);
+}
+#image {
+  border-radius: 1em;
+  height: 20rem;
+  width: 10rem;
+  background: url(/assets/purpleforest.jpg);
+  background-size: cover;
+}
+#posts, article {
+  width: 37rem;
+  background: var(--black);
+  border-radius: 1rem;
+  height: 24.25rem;
+  padding: 1rem;
+  overflow: auto;
+  border: 0.1rem solid var(--dp);
+  color: var(--white);
+}
+#post a {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  background: linear-gradient(to bottom, var(--p), var(--dp));
+  height: 7rem;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  transition: 0.2s;
+  text-decoration: none;
+}
+#post a:hover {
+  transform: translate(0, -0.5rem);
+  filter: brightness(0.7) contrast(150%);
+}
+#thumb {
+  height: 100%;
+  min-width: 8rem;
+  max-width: 8rem;
+  background: var(--lpp);
+  border-radius: 1rem;
+  border: 0.1rem solid var(--dp);
+  overflow: hidden;
+}
+#description {
+  width: 100%;
+  color: var(--white);
+}
+#description p {
+  margin: 0.5rem 0;
+}
+@media only screen and (max-width: 800px) {
+  #image {
+    display: none;
+  }
+  #back {
+    margin-bottom: 0;
+  }
+  #posts, main, article {
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+  main {
+    flex-wrap: wrap;
+  }
+  #description {
+    overflow: auto;
+  }
+}

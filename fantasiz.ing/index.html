@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.gif" />
+    <title>fantasiz.ing</title>
+</head>
+<!-- hello there lol ^_^ -->
+<body>
+    <div>
+    <main>
+        <div>
+            <img src="/assets/sitedoll.png" width="400">
+        </div>
+        <div>
+            <div id="welcome">
+            </div>
+            <div id="middle">
+                <div id="status">
+                    <div id="statuscafe">
+                        <div id="statuscafe-username"></div>
+                        <div id="statuscafe-content"></div>
+                    </div>
+                    <script src="https://status.cafe/current-status.js?name=lynx" defer></script>
+                    <p>feeling <a href="https://www.imood.com/users/kittyrave"><img src="https://moods.imood.com/display/uname-kittyrave/fg-000000/trans-1/imood.gif" alt="The current mood of kittyrave at www.imood.com"></a>
+                    </p>
+                </div>
+                <div id="buttons">
+                    <iframe src="https://nekoweb.org/frame/follow" frameborder="0" width="170" height="28"></iframe>
+                    <br>
+                    <img src="/assets/fantasizing.gif">
+                    <img src="/assets/twopaws.png">
+                    <img src="/assets/peacenow.png">
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">abt</a></li>
+                    <li><a href="/blog/index.html">blog</a></li>
+                    <li><a href="">art</a></li>
+                </ul>
+            </nav>
+            <div id="fill">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="flex">
+            <div id="stats">
+                <p>stats</p>
+                <p id="created">created: [loading]</p>
+                <p id="updated">updated: [loading]</p>
+                <p id="visitors">visitors: [loading]</p>
+                <p id="followers">followers: [loading]</p>
+                <script>
+                    // this script is under the MIT license (https://max.nekoweb.org/resources/license.txt)
+
+                    let domain = "fantasiz.ing"; // <<<--- Insert your domain here!
+
+                    (async () => {
+                    try {
+                        const request = await fetch(`https://nekoweb.org/api/site/info/${domain}`,);
+                        const json = await request.json();
+
+                        const updated = new Date(json.updated_at).toLocaleDateString(); // Formats Last Updated text
+                        const created = new Date(json.created_at).toLocaleDateString(); // Formats Creation Date text
+
+                        if (document.getElementById("created")) document.getElementById("created").innerHTML = `created: ${created}`;
+                        if (document.getElementById("updated")) document.getElementById("updated").innerHTML = `updated: ${updated}`;
+                        if (document.getElementById("visitors")) document.getElementById("visitors").innerHTML = `visits: ${json.views}`;
+                        if (document.getElementById("followers")) document.getElementById("followers").innerHTML = `followers: ${json.followers}`;
+                    } catch (error) {
+                        console.error(error);
+                        // If you wish to insert some fallback here, you may do so!
+                    }
+                    })();
+                </script>
+            </div>
+            <div id="social">
+                <a href="https://discord.com/users/579374637159415808" target="_blank"><img src="/assets/discord.png" width="100"></a>
+                <a href="https://www.instagram.com/fantasiz.ing" target="_blank"><img src="/assets/ig.png" width="100"></a>
+                <a href="https://bsky.app/profile/fantasiz.ing" target="_blank"><img src="/assets/bsky.png" width="100"></a>
+                <a href="https://x.com/_fantasized" target="_blank"><img src="/assets/twitter.png" width="100"></a>
+                <a href="https://www.last.fm/user/lynxtrax" target="_blank"><img src="/assets/lastfm.png" width="100"></a>
+            </div>
+        </div>
+            <p>2025-furever</p>
+            <p><a>sitemap</a></p>
+    </footer>
+    </div>
+</body>
+</html>

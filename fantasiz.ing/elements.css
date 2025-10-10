@@ -1,0 +1,99 @@
+/* 
+    Don't use this file to edit your site style! Create a different CSS file for that.
+    This file defines how custom elements (like sitebox) will look like.
+    Setting CSS that breaks main nekoweb site on purpose is prohibited and may result in ban and site deletion! 
+*/
+
+/* Must start with ".site-box". Change how your website will appear on main nekoweb site: https://lune.dimden.dev/405a44b7e5.png */
+.site-box {
+    text-align: center;
+    background-image: url(https://fantasizing.nekoweb.org/fantasiz.ing/assets/cloud.png); /* Only nekoweb URLs allowed, use full url to your site like https://example.nekoweb.org/images/coolbg.png */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 30px;
+    color: black;
+    font-size: 12px;
+  transition: 0.3s;
+  position: relative;
+}
+.site-box:before {
+  content: "";
+  height: 120px;
+  width: 120px;
+  background: url(https://fantasizing.nekoweb.org/fantasiz.ing/assets/doll.png);
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  right: 30px;
+}
+.site-box .sitefeature {
+  display: block;
+  border: 0;
+  opacity: 0;
+  margin: 1.1em;
+}
+.site-box .sitefeature .screenshot {
+  display: none;
+}
+.site-box > a > p {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-top: -1rem;
+  color: black;
+  font-weight: bold;
+}
+.site-box > a > span {
+  color: black;
+  display: none;
+}
+.site-box:hover {
+  transform: scale(104%);
+  font-style:italic; 
+}
+/* Style for your 'Follow on Nekoweb' button (<iframe src="https://nekoweb.org/frame/follow" frameborder="0" width="170" height="28"></iframe>) */
+.follow {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: black;
+  padding: 0.2rem;
+  font-weight: bold;
+  background: #dbd5ff;
+  border: .1rem solid #d0aaff;
+  overflow: hidden;
+  resize: none;
+  transition: 0.3s; 
+  margin: 0;
+}
+.follow:hover {
+  filter: brightness(0.7) contrast(150%);
+}
+.follow:active {
+  opacity: 0.8;
+}
+.post-box .post-author {
+  display: inline-block;
+}
+.post-box .post-author::after {
+  height: 10px;
+  width: 10px;
+  margin-left: 0.5em;
+  display: inline-block;
+  background: url(https://fantasizing.nekoweb.org/fantasiz.ing/assets/favicon.gif);
+  background-size: cover;
+}
+.post-box {
+  background: linear-gradient(to bottom, #ede6ff, #c8b4ff);
+  color: black;
+  border: 0.2em solid black;
+  border-radius: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.post-box .post-title {
+  color: #8451e8;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.post-box .post-dot {
+  display: none;
+}
+.post-box:hover {
+  transform: scale(102%);
+  font-style:italic; 
+}

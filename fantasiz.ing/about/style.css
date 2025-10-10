@@ -1,0 +1,65 @@
+body {
+    background: var(--black);
+    background-size: 100% auto;
+}
+main {
+    margin: 1rem auto;
+    width: 80%;
+    min-height: 700px;
+    background: linear-gradient(to top, #afa8ff, var(--six));
+    border: 0.3rem solid var(--black);
+    padding: 2rem;
+    display: flex;
+    gap:0.5rem;
+    color: var(--white)
+}
+#left {
+    min-width: 310px;
+    max-width: 310px;
+    text-align: center;
+}
+#select {
+    width: 300px;
+    border: 0.2rem solid var(--black);
+    padding: 0.5rem;
+    text-align: left;
+    margin: 0 auto;
+    background: linear-gradient(to bottom, var(--pink), var(--purple), var(--pink))
+}
+#character {
+    text-align: center;
+    border: 0.1rem solid var(--black);
+    padding: 0.5rem;
+    background: #222;
+}
+.right {
+    text-align: right;
+    float: right;
+}
+hr {
+    border: none;
+    background: linear-gradient(to right, var(--red), var(--orange), var(--yellow), var(--green),
+    var(--blue), var(--purple));
+    height: 5px;
+}
+#likes hr {
+    height: 2px;
+    background: var(--purple);
+}
+#now, #likes {
+    background: var(--six);
+    padding: 0.5rem;
+    border: 0.2rem solid var(--black);
+}
+#likes {
+    height: 10rem;
+    overflow: auto;
+    margin-top: 0.5rem;
+}
+@media only screen and (max-width: 1198px) {
+    main {
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+}
