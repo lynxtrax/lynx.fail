@@ -1,65 +1,117 @@
 body {
-    background: var(--black);
-    background-size: 100% auto;
+    flex-wrap: wrap;
 }
 main {
     margin: 1rem auto;
     width: 80%;
     min-height: 700px;
-    background: linear-gradient(to top, #afa8ff, var(--six));
-    border: 0.3rem solid var(--black);
     padding: 2rem;
     display: flex;
     gap:0.5rem;
     color: var(--white)
 }
-#left {
-    min-width: 310px;
-    max-width: 310px;
+#intro::before {
+    content: "the webmeowster";
+    position: absolute;
+    top: -2rem;
+    color: var(--lb);
+    font-size: 150%;
+    font-style: italic;
+}
+#intro {
+    max-width: 680px;
+    position: relative;
+}
+#me {
+    display: flex;
+    gap: 0.5rem;
+}
+#doll {
+    width: 20rem;
+    height: 25rem;
+}
+#textbox {
+    color: var(--db);
+    background: linear-gradient(to bottom, var(--white), var(--lb));
+    padding: 0.5rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    position: relative;
+    width: 20rem;
+}
+#textbox::after {
+  content: " ";
+  position: absolute;
+  top: 70%;
+  right: 100%; /* To the left of the tooltip */
+  border-width: 1rem;
+  border-style: solid;
+  border-color: transparent var(--lb) transparent transparent;
+}
+#images {
     text-align: center;
 }
-#select {
-    width: 300px;
-    border: 0.2rem solid var(--black);
-    padding: 0.5rem;
-    text-align: left;
-    margin: 0 auto;
-    background: linear-gradient(to bottom, var(--pink), var(--purple), var(--pink))
+#now {
+    position: relative;
 }
-#character {
-    text-align: center;
-    border: 0.1rem solid var(--black);
-    padding: 0.5rem;
-    background: #222;
+#now::before {
+    content: "now";
+    position: absolute;
+    top: -2rem;
+    color: var(--lb);
+    font-size: 150%;
+    font-style: italic;
 }
-.right {
-    text-align: right;
-    float: right;
+#now ul, #now li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#now a {
+    color: var(--lp);
+}
+#now a:hover {
+    color: var(--dp);
+}
+#back {
+    margin-bottom: 3rem;
 }
 hr {
-    border: none;
-    background: linear-gradient(to right, var(--red), var(--orange), var(--yellow), var(--green),
-    var(--blue), var(--purple));
-    height: 5px;
+    border: .1rem solid var(--lb);
+    border-radius: 1rem;
+    width: 95%;
 }
-#likes hr {
-    height: 2px;
-    background: var(--purple);
+#interests {
+    position: relative;
+    background: var(--b) linear-gradient(to bottom, var(--b), var(--bp));
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 25rem;
+    color: var(--ddb);
 }
-#now, #likes {
-    background: var(--six);
-    padding: 0.5rem;
-    border: 0.2rem solid var(--black);
+#interests::before {
+    content: "interests";
+    position: absolute;
+    top: -2rem;
+    left: -.1rem;
+    color: var(--lb);
+    font-size: 150%;
+    font-style: italic;
 }
-#likes {
-    height: 10rem;
-    overflow: auto;
-    margin-top: 0.5rem;
+#interests h1 {
+    margin: 0;
+    font-size: 14pt;
+    color: var(--black);
 }
-@media only screen and (max-width: 1198px) {
-    main {
+/* mobile starts here */
+@media only screen and (max-width: 800px) { 
+    main, #me {
         flex-wrap: wrap;
-        justify-content: center;
-
+    }
+    #textbox {
+        width: 25rem;
+    }
+    #interests {
+        margin-top: 2rem;
     }
 }

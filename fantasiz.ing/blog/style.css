@@ -1,10 +1,10 @@
 main {
-  background: linear-gradient(to bottom, var(--black) 50%, var(--dp));
+  background: linear-gradient(to bottom, var(--black) 50%, var(--p));
   width: 50rem;
   padding: 1rem;
   border-radius: 1rem;
   gap: 1rem;
-  border: 0.1rem solid var(--dp);
+  border: 0.1rem solid var(--p);
   position: relative;
 }
 main::before {
@@ -17,7 +17,7 @@ main::before {
   font-style: italic;
 }
 #back {
-  background: linear-gradient(to bottom, var(--p), var(--dp));
+  background: linear-gradient(to bottom, var(--bp), var(--p));
   width: 10em;
   padding: 1rem 3.2rem;
   text-align: center;
@@ -35,7 +35,7 @@ main::before {
   border-radius: 1em;
   height: 20rem;
   width: 10rem;
-  background: url(/assets/purpleforest.jpg);
+  background: url(../assets/purpleforest.jpg);
   background-size: cover;
 }
 #posts, article {
@@ -45,14 +45,14 @@ main::before {
   height: 24.25rem;
   padding: 1rem;
   overflow: auto;
-  border: 0.1rem solid var(--dp);
+  border: 0.1rem solid var(--p);
   color: var(--white);
 }
 #post a {
   display: flex;
   gap: 1rem;
   width: 100%;
-  background: linear-gradient(to bottom, var(--p), var(--dp));
+  background: linear-gradient(to bottom, var(--bp), var(--p));
   height: 7rem;
   border-radius: 1rem;
   padding: 0.5rem;
@@ -69,7 +69,7 @@ main::before {
   max-width: 8rem;
   background: var(--lpp);
   border-radius: 1rem;
-  border: 0.1rem solid var(--dp);
+  border: 0.1rem solid var(--p);
   overflow: hidden;
 }
 #description {

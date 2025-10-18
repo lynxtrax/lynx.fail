@@ -18,37 +18,23 @@
             <div id="welcome">
             </div>
             <div id="middle">
-                <div id="status">
-                    <div id="statuscafe">
-                        <div id="statuscafe-username"></div>
-                        <div id="statuscafe-content"></div>
-                    </div>
-                    <script src="https://status.cafe/current-status.js?name=lynx" defer></script>
-                    <p>feeling <a href="https://www.imood.com/users/kittyrave"><img src="https://moods.imood.com/display/uname-kittyrave/fg-000000/trans-1/imood.gif" alt="The current mood of kittyrave at www.imood.com"></a>
-                    </p>
+                <nav>
+                <ul>
+                    <li><a href="about/index.html">abt</a></li>
+                    <li><a href="blog/index.html">blog</a></li>
+                    <li><a href="">art</a></li>
+                </ul>
+                </nav>
+                <div id="fill">
                 </div>
                 <div id="buttons">
                     <iframe src="https://nekoweb.org/frame/follow" frameborder="0" width="170" height="28"></iframe>
                     <br>
                     <img src="assets/fantasizing.gif">
-                    <img src="assets/twopaws.png">
-                    <img src="assets/peacenow.png">
+                    <img class="filter" src="assets/twopaws.png">
+                    <img class="filter" src="assets/peacenow.png">
                 </div>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="">abt</a></li>
-                    <li><a href="blog/index.html">blog</a></li>
-                    <li><a href="">art</a></li>
-                </ul>
-            </nav>
-            <div id="fill">
-            </div>
-        </div>
-    </main>
-    <footer>
-        <div class="flex">
-            <div id="stats">
+                <div id="stats">
                 <p>stats</p>
                 <p id="created">created: [loading]</p>
                 <p id="updated">updated: [loading]</p>
@@ -78,6 +64,26 @@
                     })();
                 </script>
             </div>
+            </div>  
+        </div>
+    </main>
+    <div>
+        <div class="flex">
+            <div id="statuss">
+                <div class="status">
+                    <p id="status-details">loading...</p>
+                    <div id="status-blob"></div>
+                </div>
+                <script src="assets/discord.js"></script>
+                <div id="statuscafe">
+                    <div id="statuscafe-username"></div>
+                    <div id="statuscafe-content"></div>
+                </div>
+                <script src="https://status.cafe/current-status.js?name=lynx" defer></script>
+                <p>feeling <a href="https://www.imood.com/users/kittyrave"><img src="https://moods.imood.com/display/uname-kittyrave/fg-000000/trans-1/imood.gif" alt="The current mood of kittyrave at www.imood.com"></a>
+                </p>
+            </div>
+        
             <div id="social">
                 <a href="https://discord.com/users/579374637159415808" target="_blank"><img src="assets/discord.png" width="100"></a>
                 <a href="https://www.instagram.com/fantasiz.ing" target="_blank"><img src="assets/ig.png" width="100"></a>
@@ -86,9 +92,11 @@
                 <a href="https://www.last.fm/user/lynxtrax" target="_blank"><img src="assets/lastfm.png" width="100"></a>
             </div>
         </div>
+    <footer>
             <p>2025-furever</p>
-            <p><a>sitemap</a></p>
+            <p><a href="#">sitemap</a> • <a href="#">credits</a></p>
     </footer>
+    </div>
     </div>
 </body>
 </html>

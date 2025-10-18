@@ -55,8 +55,8 @@
   color: black;
   padding: 0.2rem;
   font-weight: bold;
-  background: #dbd5ff;
-  border: .1rem solid #d0aaff;
+  background: #858EE5;
+  border: .1rem solid #3854BC;
   overflow: hidden;
   resize: none;
   transition: 0.3s; 
@@ -80,14 +80,14 @@
   background-size: cover;
 }
 .post-box {
-  background: linear-gradient(to bottom, #ede6ff, #c8b4ff);
+  background: linear-gradient(to bottom, #D5E6FF, #AAB2FF);
   color: black;
   border: 0.2em solid black;
   border-radius: 0;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .post-box .post-title {
-  color: #8451e8;
+  color: #1B3182;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .post-box .post-dot {

@@ -6,14 +6,19 @@
     src: url(./assets/Pixellari.ttf);
 }
 :root {
-  --lb: #a3d7ff;
-  --b: #83a6ff;
-  --bp: #9696ff;
-  --p: #7e70fd;
+  --ddb: #1B3182;
+  --db: #3854BC;
+  --lb: #D5E6FF;
+  --b: #AAB2FF;
+  --bp: #858EE5;
+  --p: #6052ce; 
   --dp: #6438bc;
   --lp: #a690ff;
   --pp: #d0aaff;
   --lpp: #dbd5ff;
+  --ly: #FDFFD0;
+  --y: #F6E68E;
+  --dy: #AE8C34;
   --black: #000;
   --white: #fff;
 }
@@ -28,6 +33,7 @@ body {
     height: 100vh;
     flex-wrap: wrap;
     overflow-x: hidden;
+    color: var(--ly);
 }
 @keyframes load {
   from {
@@ -39,11 +45,11 @@ body {
   }
 }
 a {
-    color: var(--dp);
+    color: var(--y);
     transition: 0.2s;
 }
 a:hover {
-    color: var(--p);
+    color: var(--dy);
 }
 main, .flex {
     display: flex;
@@ -67,17 +73,24 @@ main, .flex {
   }
 #middle {
     display: flex;
+    flex-wrap: wrap;
+    max-width: 400px;
 }
 #middle, nav {
     margin-bottom: 1rem;
 }
-#status, #stats {
-    width: 16rem;
+#statuss, #stats {
+    width: 15rem;
     height: 8.5em;
-    overflow: auto;
-    background: var(--lb);
+    overflow: hidden;
+    background: var(--b) linear-gradient(to bottom, var(--lb), var(--b));
     padding: 0.5rem;
     border-radius: 0.5rem;
+    text-align: left;
+    color: var(--black);
+}
+#statuss p {
+    margin: 0;
 }
 #buttons {
     width:  9rem;
@@ -86,6 +99,18 @@ main, .flex {
 #buttons iframe {
     margin-left: .5rem;
 }
+.filter {
+    filter: sepia(100%) hue-rotate(10deg);
+    transition: 0.3s;
+}
+.filterp {
+    filter: sepia(100%) hue-rotate(190deg);
+    transition: 0.3s;
+}
+.filter:hover, .filterp:hover {
+    filter:none;
+}
+/* 190 deg is purple */
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -96,26 +121,27 @@ nav li {
     margin: 1rem 0;
 }
 nav a {
-    background: var(--p);
+    background: var(--db);
     width: calc(24rem/3);
     padding: 1rem 3.2rem;
     text-align: center;
-    box-shadow: inset var(--lpp) .1em .2em .5em, inset var(--dp) -.1em -.2em .5em;
-    color: var(--lb);
+    box-shadow: inset var(--bp) .1em .2em .5em, inset var(--ddb) -.1em -.2em .5em;
+    color: var(--lpp);
     transition: 0.2s;
 }
 nav a:hover {
-    color: var(--white);
+    color: var(--lpp);
     filter: brightness(0.7) contrast(150%);
 }
 #fill {
     height: 1em;
     width: 24.6em;
-    background: linear-gradient(to right, var(--lpp), var(--pp), var(--lp), var(--p))
+    background: linear-gradient(to right, var(--lb), var(--b), var(--bp), var(--db));
+    margin-bottom: 1em;
 }
 footer p, #stats p {
     text-align: center;
-    color: var(--pp);
+    color: var(--bp);
     margin: 0.5em 0;
 }
 #stats {
@@ -126,8 +152,16 @@ footer p, #stats p {
     color: var(--black);
 }
 #stats p:first-child {
-    color: var(--dp);
+    color: var(--ddb);
     margin: 0;
+}
+#statuscafe {
+    background: var(--bp);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    box-shadow: -0.1rem 0.2rem var(--db);
+    margin-bottom: 0.5rem;
+    overflow: auto;
 }
 #social {
     display: flex;
@@ -145,7 +179,27 @@ footer p, #stats p {
 #comment {
     width: 40rem;
     margin: 0 auto;
+} 
+/* discord widget */
+
+#status-blob {
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  margin-top: 2px;
 }
+
+#status-details {
+  margin: 0;
+  padding-right: 5px;
+}
+
+.status {
+  display: flex;
+  flex-direction: row;
+}
+
+/* mobile starts here */
 @media only screen and (max-width: 800px) {
     main, .flex, #middle, #social {
         flex-wrap: wrap;
@@ -155,7 +209,7 @@ footer p, #stats p {
     #fill {
         margin-bottom: 1rem;
     }
-    #status {
-        width: 10rem;
+    #statuss {
+        width: 80%;
     }
 }
