@@ -36,7 +36,7 @@
   display: none;
 }
 .site-box > a > p {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-top: -1rem;
   color: black;
   font-weight: bold;
@@ -51,12 +51,12 @@
 }
 /* Style for your 'Follow on Nekoweb' button (<iframe src="https://nekoweb.org/frame/follow" frameborder="0" width="170" height="28"></iframe>) */
 .follow {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: black;
   padding: 0.2rem;
   font-weight: bold;
-  background: #858EE5;
-  border: .1rem solid #3854BC;
+  background: #C4D237;
+  border: none;
   overflow: hidden;
   resize: none;
   transition: 0.3s; 
@@ -80,20 +80,23 @@
   background-size: cover;
 }
 .post-box {
-  background: linear-gradient(to bottom, #D5E6FF, #AAB2FF);
+  background: #7EAD41;
   color: black;
-  border: 0.2em solid black;
+  border: 0.2rem solid black;
   border-radius: 0;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  transition: 0.2s;
 }
 .post-box .post-title {
-  color: #1B3182;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #C4D237;
+  text-shadow: 0.1rem 0.2rem black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .post-box .post-dot {
   display: none;
 }
 .post-box:hover {
   transform: scale(102%);
-  font-style:italic; 
+  font-style: italic; 
+  box-shadow: 0.2rem 0.2rem #C24816, inset 0 0 0.5rem white;
 }

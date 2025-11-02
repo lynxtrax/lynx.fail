@@ -1,0 +1,117 @@
+<div id="marquee">   
+    <div class="marquee filter" data-pause="true" data-direction="right">
+        <div class="marquee-items">
+            <a href="https://joo.sh/" target="_blank"><img src="https://files.joo.sh/img/buttons/jooshRice.gif" alt="joosh"></a>
+            <a href="https://max.nekoweb.org/" target="_blank"><img src="https://max.nekoweb.org/images/button.png" alt="max"></a>
+            <a href="https://jbc.lol" target="_blank"><img src="https://jbc.lol/imgs/buttons/jbtn.svg" alt="jb's site" style="image-rendering: pixelated;"/></a>
+            <a href='https://pc98.club' target="_blank"><img src='./assets/index/buttons/pc98.gif' alt='PC98.CLUB'></a>
+            <a href='https://reigen.moe' target="_blank"><img src='./assets/index/buttons/reigenmoe-badge.gif' alt='reigen.moe'></a>
+            <a href="https://yatagarasu.nekoweb.org" target="_blank"><img src="./assets/index/buttons/yatagarasu.gif" alt="Yatagarasu"></a>
+            <a href="https://nyscyra.nekoweb.org/" target="_blank"><img src="https://nyscyra.nekoweb.org/img/button.png" alt="nyscyra"></a>
+            <a href='https://eyeorb.net' target="_blank"><img src='./assets/index/buttons/eyeorb.gif' alt='eyeorb'></a>
+            <a href="https://bleu.nekoweb.org/" target="_blank"><img src="https://bleu.nekoweb.org/button.gif" alt="bleu"></a>
+            <a href="https://rice.place/" target="_blank"><img src="https://rice.nekoweb.org/button/riceus.gif" alt="rice.place"></a>
+            <a href="https://gator.nekoweb.org/" target="_blank"><img src="./assets/index/buttons/gator.png" alt="gator"></a>
+            <a href="https://makoenergy.neocities.org/" target="_blank"><img src="./assets/index/buttons/mako.gif" alt="makoenergy"></a>
+            <a href="https://medjed.nekoweb.org/" target="_blank"><img src="https://medjed.nekoweb.org/assets/images/button.jpg" alt="Medjed"></a>
+            <a href='https://duducat.moe/' target="_blank"><img src='./assets/index/buttons/duducat.gif' alt='duducat'></a>
+            <a href='https://www.virtuagirl.net/' target="_blank"><img src='./assets/index/buttons/virtuagirlbutton.gif' alt='virtua'></a>
+        </div>
+    </div>           
+    <script defer>
+        function handleMarquee() {
+        // Get all marquees on page
+        const marquees = document.querySelectorAll(".marquee");
+        
+        // Loop through each marquee
+        marquees.forEach((marquee) => {
+        // Get the main container and clone it
+        // And then add the clone to the marquee
+        const container = marquee.querySelector(".marquee-items");
+        let clone = container.cloneNode(true);
+        marquee.appendChild(clone);
+        // Finally, add the scroll class at the same time so there is no gaps in the scrolling effect
+        // We also determine if the items should be scrolling right-to-left instead by default, and adjust the marquees flex direction and which animation the containers use if so
+        if (marquee.dataset.direction == "right") {
+        marquee.style.flexDirection = "row-reverse";
+        container.classList.add("scroll-l2r");
+        clone.classList.add("scroll-l2r");
+        } else {
+        container.classList.add("scroll-r2l");
+        clone.classList.add("scroll-r2l");
+        }
+        
+        // !! NEW STUFF FOR PAUSING; COPY BELOW
+        
+        // First we check for the new data attribute to see if pausing this marquee is allowed:
+        if (marquee.dataset.pause == "true") {
+        
+        // If pausing is allowed, we simply add some mouse events for when the mouse
+        // enters and leaves the marquee that add and remove our new 'paused' class to
+        // the .marquee-items containers
+        marquee.onmouseover = e => {
+            container.classList.add("paused");
+            clone.classList.add("paused");
+        }
+        marquee.onmouseout = e => {
+            container.classList.remove("paused");
+            clone.classList.remove("paused");
+        }
+        }
+        
+        // !! END NEW STUFF FOR PAUSING
+        });
+        }
+        handleMarquee();
+    </script>
+</div>
+
+<div id="stats">
+    <p>this site was created <span id="created"></span> and last updated 
+        <span id="updated"></span>. you are visitor #<span id="visitors"></span>!!
+    </p>
+    <p>
+        nekoweb followers: <span id="followers"></span>
+    </p>
+    <iframe src="https://nekoweb.org/frame/follow" frameborder="0" width="170" height="28"></iframe>
+    <script>
+        // this script is under the MIT license (https://max.nekoweb.org/resources/license.txt)
+
+        let domain = "fantasiz.ing"; // <<<--- Insert your domain here!
+
+        (async () => {
+        try {
+            const request = await fetch(`https://nekoweb.org/api/site/info/${domain}`,);
+            const json = await request.json();
+
+            const updated = new Date(json.updated_at).toLocaleDateString(); // Formats Last Updated text
+            const created = new Date(json.created_at).toLocaleDateString(); // Formats Creation Date text
+
+            if (document.getElementById("created")) document.getElementById("created").innerHTML = `${created}`;
+            if (document.getElementById("updated")) document.getElementById("updated").innerHTML = `${updated}`;
+            if (document.getElementById("visitors")) document.getElementById("visitors").innerHTML = `${json.views}`;
+            if (document.getElementById("followers")) document.getElementById("followers").innerHTML = `${json.followers}`;
+        } catch (error) {
+            console.error(error);
+            // If you wish to insert some fallback here, you may do so!
+        }
+        })();
+    </script>
+</div>
+
+<div id="status">
+    <div class="status">
+        <p id="status-details">loading...</p>
+        <div id="status-blob"></div>
+    </div>
+    <script src="./assets/index/discord.js"></script>
+    <div id="statuscafe">
+        <div id="statuscafe-username"></div>
+        <div id="statuscafe-content"></div>
+    </div>
+    <p>i'm currently feeling <a href="https://www.imood.com/users/kittyrave">
+        <img src="https://moods.imood.com/display/uname-kittyrave/fg-ffffff/trans-1/imood.gif" 
+        alt="The current mood of kittyrave at www.imood.com">
+    </a></p>
+    <script src="https://status.cafe/current-status.js?name=lynx" defer></script>
+</div>

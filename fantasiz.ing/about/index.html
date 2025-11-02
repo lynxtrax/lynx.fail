@@ -3,88 +3,157 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="../style.css" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="icon" type="image/x-icon" href="../assets/favicon.gif" />
+    <link rel="stylesheet" type="text/css" href="../assets/base.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/about/style.css" />
+    <link rel="icon" type="image/x-icon" href="../assets/spiral.gif" />
     <title>about</title>
   </head>
   <body>
-      <main>
-        <div id="left">
-          <div id="back"><a href="../index.html">go back</a></div>
-            <div id="intro">
-              <p>hii! you can just call me lynx. i'm a 19 y/o artist from midwest USA, currently
-                just figuring out what i want to do in life. i love cats and going to shows/raves. 
-                the art i dabble in ranges from sewing to clay, though i mainly just draw digitally.
-                i strive to make people smile ☺︎
-              </p>
-            </div>
-            <div id="me">
-              <div id="doll">
-                <img src="../assets/doll.png">
-              </div>
-              <div id="musicandimage">
-                <div id="textbox">
-                  <div id="now">
-                  <ul>
-                    <li>🎮 playing - Nothing!</li>
-                    <li>📺 watching - Digimon: Digital Monsters</li>
-                    <li>🎶 listening - <a 
-                      href="https://ravefurrest.bandcamp.com/album/ravefurrest-vol-1-amen-breaks-the-internet">
-                      Ravefurrest Vol 1: Amen Breaks the Internet</a>
-                    </li>
-                    <li>📖 reading - Two Dark Reigns by Kendare Blake</li>
-                    <li>🖋️ working - on a commission for a friend :3</li>
-                  </ul>
-                  <p>last updated 10/17/25</p>
-                </div>
-                </div>
-                <div id="images">
-                  <img src="../assets/blinkie/angelblink.gif">
-                  <img src="../assets/blinkie/lifeblinkie.gif">
-                  <br>
-                  <img src="../assets/id/artist.png">
-                  <img src="../assets/id/gemini.png">
-                  <img src="../assets/id/colorful_badge.png">
-                  <br>
-                  <img src="../assets/id/kittyparent_badge.png">
-                  <img src="../assets/id/plur_badge.png">
-                </div>
-              </div>
-            </div>
+    <div>
+     <main>
+      <nav>
+        <li><a href="../index.html">home</a></li>
+        <li>✮</li>
+        <li><a href="">art</a></li>
+        <li>✮</li>
+        <li><a href="../blog/index.html">blog</a></li>
+        <li>✮</li>
+        <li><a href="">collections</a></li>
+        <li>✮</li>
+        <li><a href="">medialog</a></li>
+        <li>✮</li>
+        <li><a href="">shrines</a></li>
+        <li>✮</li>
+        <li><a href="">guestbook</a></li>
+      </nav>
+      <header>
+        <h1><i>ABOUT ME!</i></h1>
+      </header>
+      <div class="flex">
+        <div id="intro">
+          <p>
+            hii! you can just call me lynx. i'm a 19 y/o artist from midwest USA, 
+            currently just figuring out what i want to do in life. i love cats and
+            going to shows/raves. the art i dabble in ranges from sewing to clay,
+            though i mainly just draw digitally. i strive to make people smile ☺︎
+          </p>
+          <div style="text-align: center;">
+            <img src="../assets/about/stamps/peace.gif" height="31" width="88">
+            <img src="../assets/about/stamps/hardcorehappines.gif" height="31" width="88">
+          </div>
         </div>
-        <div id="right">
-            <div id="interests">
-              <p>i yap here!! click to dropdown</p>
-              <hr>
-              <h1>music</h1>
-              <details><summary>ROAR</summary>
-                i'm listening to ROAR right now as i create this page and god i love his music so much.
-                he's simultaneously known yet not. and i'm so grateful for I Can't Handle Change /
-                I'm Not Here To Make Friends' popularity but i also wish i could find people who have listened to 
-                something other than a song off those EPs. Diamond Destroyer of Death is my favorite album of his 
-                but honestly his whole discography is GREAT. If I had to say I don't think Knives for Aries is the best,
-                but it certaintly grew on me and it's super catchy. but AGHHHH like Wondering Why is so good. so is Explosion
-                of Birds. and Fading Kitten Syndrome actually made me sob the first time I listened to it, i had to avoid it 
-                for a while because it'd make me cry LMAO. it's my dream to see him on tour sometime. *shakes you* listen to ROAR. 
-                for me please. PLEASEkjrf. i also saw HKFY and the lead singer recognized my ROAR shirt and that was the best thing ever. that's all.
-              </details>
-              <details><summary>sixwing</summary>
-                i never rlly listened salvia hunden's music as MAILPUP despite being into those genres but i did give her new 
-                album, my teeth will free you, a try and oh my god is it beautiful. the songs are so artistic and unique. my favorite
-                would have to be seraph or dogwhistle. this album is definitely one to sit down and listen to! 3/31 really got me in the 
-                feels. if the themes of the album are something you can relate to, it really gets to you.
-              </details>
-              <details><summary>Pierce The Veil</summary>
-                the first emo band i really got into in my journey as a young wannabe scene kid. their music really means a lot to
-                me and has got me through some tough times. i saw them once with my best friend and it was soo much fun and i'm seeing them 
-                again on the 19th and i can't WAIT!! genuinely all their songs are so good. my favorite album is probably their first one, A 
-                Flair For The Dramatic. it was so cool being there for the release of The Jaws of Life and just seeing how their music has 
-                evolved throughout the years.
-              </details>
-              <hr>
-            </div>
+        <div id="lastfm">
+          <img src="../assets/about/music.gif">
+          <div id="listening">
+          </div>
+          <script>
+            // this script is under the MIT license (https://max.nekoweb.org/resources/license.txt)
+                        
+            const USERNAME = "lynxtrax"; // Put your LastFM username here
+            const BASE_URL = `https://lastfm-last-played.biancarosa.com.br/${USERNAME}/latest-song`;
+
+            const getTrack = async () => {
+                const request = await fetch(BASE_URL);
+                const json = await request.json();
+                let status
+
+                let isPlaying = json.track['@attr']?.nowplaying || true;
+
+                if(!isPlaying) {
+                    // Trigger if a song isn't playing
+                    return;
+                } else {
+                    // Trigger if a song is playing
+                }
+
+                // Values:
+                // COVER IMAGE: json.track.image[1]['#text']
+                // TITLE: json.track.name
+                // ARTIST: json.track.artist['#text']
+
+                document.getElementById("listening").innerHTML = `
+                <img src="${json.track.image[2]['#text']}">
+                <div id="trackInfo">
+                <h3 id="trackName">${json.track.name}</h3>
+                <p id="artistName">${json.track.artist['#text']}</p>
+                </div>
+                `
+            };
+
+            getTrack();
+            setInterval(() => { getTrack(); }, 10000);
+          </script>
         </div>
-      </main>
+      </div>
+      <div class="flex">
+        <div id="likes">
+          <div>
+            <details><summary>general</summary>
+              the colors green, orange, purple, and red!! chemistry (nuclear, polymer), biology (molecular, micro, cell) </details>
+            <hr>
+            <details><summary>music</summary>
+            happy hardcore, bubblegum pop, jazz, rock, industrial, etc. ROAR, Pierce the Veil, NIN, HEALTH, Machine Girl, Mitski, Glass Beach, The Cure, SOAD, hell just stalk my last.fm</details>
+            <hr>
+            <details><summary>games</summary>
+            Splatoon, Pokemon (B&W/B2&W2, ORAS, X&Y, PL:A), Cattails: Wildwood Story</details>
+            <hr>
+            <details><summary>food</summary>
+            strawberries, waffles, lychees, grilled cheese, green tea, matcha, macaroons, coconut, marshmallows, and way more LMAO</details>
+            <hr>
+          </div>
+        </div>
+        <div id="loadout">
+          <p>daily loadout babyyy</p>
+          <img src="../assets/about/loadout.png">
+        </div>
+      </div>
+      <div class="flex">
+        <div id="plurrh">
+          <h1><a href="https://www.plurh.com/about/" target="_blank">PLURRH</a></h1>
+          <p><i>peace, love, unity, respect, responsibility, and hope!</i>
+            <br>
+            this movement has its roots in rave and EDM culture, but i think it's something everybody 
+            should strive to follow ♡ i aspire to live with plurrh in my heart. i really want to leave 
+            a positive mark on the people's lives that i'm in and hopefully inspire them to do the same 
+            to others.
+            <br>
+            i think spreading kindess and love is greatly needed, especially in times like these. it doesn't 
+            take much to be nice to the people around you. when i see bullies and bigots, i truly cannot comprehend
+            their way of living. all humans are beautiful and worthy of compassion as long as they have the capability 
+            to return it.
+          </p>
+          <div id="circle"></div>
+        </div>
+        <div id="stamps">
+          <img src="../assets/about/stamps/logout.png">
+          <img src="../assets/about/stamps/explode.png">
+          <img src="../assets/about/stamps/enjoyeverything.png">
+          <img src="../assets/about/stamps/bloodstamp.jpg">
+          <br>
+          <img src="../assets/about/blinkie/HATEGRAPHICDESIGN.gif">
+          <img src="../assets/about/blinkie/loserboy.gif">
+          <img src="../assets/about/blinkie/beltblinkie.gif">
+        </div>
+        <div id="now">
+          <h2>NOW</h2>
+          <ul>
+            <li>watching: Digimon: Digital Monsters</li>
+            <li>playing: nothing!</li>
+            <li>listening to: Modest Mouse</li>
+            <li>reading: nothing!</li>
+            <li>working on: this website</li>
+          </ul>
+        </div>
+      </div>
+      <footer>
+        <a href="https://discord.com/users/579374637159415808"><img src="../assets/about/discord.png" alt=""></a>
+        <a href=""><img src="../assets/about/ig.png" alt=""></a>
+        <a href=""><img src="../assets/about/twitter.png" alt=""></a>
+        <a href=""><img src="../assets/about/bsky.png" alt=""></a>
+        <a href="https://www.last.fm/user/lynxtrax"><img src="../assets/about/lastfm.png" alt=""></a>
+      </footer>
+     </main>
+     <div id="pagedoll"></div>
+    </div>
   </body>
 </html>

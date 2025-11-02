@@ -3,44 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="assets/favicon.gif" />
+    <link rel="stylesheet" href="./assets/index/style.css">
+    <link rel="stylesheet" href="./assets/base.css">
+    <link rel="icon" type="image/x-icon" href="./assets/spiral.gif" />
     <title>fantasiz.ing</title>
 </head>
 <!-- hello there lol ^_^ -->
 <body>
-    <div>
-    <main>
-        <div>
-            <img src="assets/sitedoll.png" width="400">
-        </div>
-        <div>
-            <div id="welcome">
-            </div>
-            <div id="middle">
-                <nav>
+    <div id="container">
+        <section>
+            <nav>
+                <p>NAVIGATION</p>
                 <ul>
-                    <li><a href="about/index.html">abt</a></li>
-                    <li><a href="blog/index.html">blog</a></li>
-                    <li><a href="">art</a></li>
+                    <li><a href="./about/index.html">about</a></li>
+                    <li id="inactive"><a href="">art</a></li>
+                    <li><a href="./blog/index.html">blog</a></li>
+                    <li id="inactive"><a href="">collections</a></li>
+                    <li id="inactive"><a href="">medialog</a></li>
+                    <li id="inactive"><a href="">shrines</a></li>
+                    <li id="inactive"><a href="">guestbook</a></li>
                 </ul>
-                </nav>
-                <div id="fill">
-                </div>
-                <div id="buttons">
-                    <iframe src="https://nekoweb.org/frame/follow" frameborder="0" width="170" height="28"></iframe>
-                    <br>
-                    <img src="assets/fantasizing.gif">
-                    <img class="filter" src="assets/twopaws.png">
-                    <img class="filter" src="assets/peacenow.png">
-                </div>
-                <div id="stats">
-                <p>stats</p>
-                <p id="created">created: [loading]</p>
-                <p id="updated">updated: [loading]</p>
-                <p id="visitors">visitors: [loading]</p>
-                <p id="followers">followers: [loading]</p>
-                <script>
+            </nav>
+            <div id="stats"> 
+                <p>this site has been online since <span id="created"></span> and was last updated 
+                <span id="updated"></span>. you are visitor #<span id="visitors"></span>!!
+                </p>
+                <p>
+                    nekoweb followers: <span id="followers"></span>
+                </p>
+                <script defer>
                     // this script is under the MIT license (https://max.nekoweb.org/resources/license.txt)
 
                     let domain = "fantasiz.ing"; // <<<--- Insert your domain here!
@@ -53,10 +44,10 @@
                         const updated = new Date(json.updated_at).toLocaleDateString(); // Formats Last Updated text
                         const created = new Date(json.created_at).toLocaleDateString(); // Formats Creation Date text
 
-                        if (document.getElementById("created")) document.getElementById("created").innerHTML = `created: ${created}`;
-                        if (document.getElementById("updated")) document.getElementById("updated").innerHTML = `updated: ${updated}`;
-                        if (document.getElementById("visitors")) document.getElementById("visitors").innerHTML = `visits: ${json.views}`;
-                        if (document.getElementById("followers")) document.getElementById("followers").innerHTML = `followers: ${json.followers}`;
+                        if (document.getElementById("created")) document.getElementById("created").innerHTML = `${created}`;
+                        if (document.getElementById("updated")) document.getElementById("updated").innerHTML = `${updated}`;
+                        if (document.getElementById("visitors")) document.getElementById("visitors").innerHTML = `${json.views}`;
+                        if (document.getElementById("followers")) document.getElementById("followers").innerHTML = `${json.followers}`;
                     } catch (error) {
                         console.error(error);
                         // If you wish to insert some fallback here, you may do so!
@@ -64,39 +55,83 @@
                     })();
                 </script>
             </div>
-            </div>  
-        </div>
-    </main>
-    <div>
-        <div class="flex">
-            <div id="statuss">
-                <div class="status">
-                    <p id="status-details">loading...</p>
-                    <div id="status-blob"></div>
-                </div>
-                <script src="assets/discord.js"></script>
-                <div id="statuscafe">
-                    <div id="statuscafe-username"></div>
-                    <div id="statuscafe-content"></div>
-                </div>
-                <script src="https://status.cafe/current-status.js?name=lynx" defer></script>
-                <p>feeling <a href="https://www.imood.com/users/kittyrave"><img src="https://moods.imood.com/display/uname-kittyrave/fg-000000/trans-1/imood.gif" alt="The current mood of kittyrave at www.imood.com"></a>
-                </p>
+            <div id="follow">
+                <iframe src="https://nekoweb.org/frame/follow" frameborder="0" width="170" height="28"></iframe>
             </div>
-        
-            <div id="social">
-                <a href="https://discord.com/users/579374637159415808" target="_blank"><img src="assets/discord.png" width="100"></a>
-                <a href="https://www.instagram.com/fantasiz.ing" target="_blank"><img src="assets/ig.png" width="100"></a>
-                <a href="https://bsky.app/profile/fantasiz.ing" target="_blank"><img src="assets/bsky.png" width="100"></a>
-                <a href="https://x.com/_fantasized" target="_blank"><img src="assets/twitter.png" width="100"></a>
-                <a href="https://www.last.fm/user/lynxtrax" target="_blank"><img src="assets/lastfm.png" width="100"></a>
+        </section>
+        <main>
+            <header>
+                <h1>lynx.fail</h1>
+            </header>
+            <div class="flex" id="row1">
+                <div id="intro">
+                    <p>welcome to lynx.fail ₍^. .^₎Ⳋ this is an attempt to sort my brain into a digital format. 
+                       i'll store some of my thoughts (aka my blog) and art here, among other things!
+                    <br>
+                       enjoy poking around! i appreciate you checking out my site.
+                    </p>
+                    <p>i lowk hate this its ugly but its ok cuz something is better than nothing.!!</p>
+                    <div style="text-align: center;">
+                        <img class="filter" src="./assets/index/buttons/twopaws.png">
+                        <img src="./assets/index/buttons/css.png">
+                        <img class="filter" src="./assets/index/buttons/smile.gif">
+                        <br>
+                        <img src="./assets/index/stamps/meow.gif">
+                        <img src="./assets/index/stamps/circuit.png">
+                        <img src="./assets/index/stamps/wave.gif">
+                    </div>
+                </div>
+                <div id="updates">
+                    <div id="crt">
+                        <div><iframe src="./rss.xml"></iframe></div>
+                    </div>
+                </div>
             </div>
-        </div>
-    <footer>
-            <p>2025-furever</p>
-            <p><a href="#">sitemap</a> • <a href="#">credits</a></p>
-    </footer>
-    </div>
+            <div class="flex" id="row2">
+                <div id="sitedoll"></div>
+                <div id="status">
+                    <div class="status">
+                        <p id="status-details">loading...</p>
+                        <div id="status-blob"></div>
+                    </div>
+                    <script src="./assets/index/discord.js"></script>
+                    <div id="statuscafe">
+                        <div id="statuscafe-username"></div>
+                        <div id="statuscafe-content"></div>
+                    </div>
+                    <p id="mood">i'm currently feeling <a href="https://www.imood.com/users/kittyrave">
+                        <img src="https://moods.imood.com/display/uname-kittyrave/fg-000000/trans-1/imood.gif" 
+                        alt="The current mood of kittyrave at www.imood.com">
+                    </a></p>
+                    <script src="https://status.cafe/current-status.js?name=lynx" defer></script>
+                </div>
+            </div>
+            <div class="flex" id="row3">
+                <div id="button">
+                    <img src="./assets/button.png" width="88" height="31">
+                    <br>
+                    <textarea><!-- hotlink me please!! button WILL change -->
+                        <a href="https://lynx.fail" target="_blank"><img src="" width="88" height="31" alt="lynx.fail"></a></textarea>
+                </div>
+                <div id="buttons" class="filter2">
+                                <a href="https://joo.sh/" target="_blank"><img src="https://files.joo.sh/img/buttons/jooshRice.gif" alt="joosh"></a>
+                                <a href="https://max.nekoweb.org/" target="_blank"><img src="https://max.nekoweb.org/images/button.png" alt="max"></a>
+                                <a href="https://jbc.lol" target="_blank"><img src="https://jbc.lol/imgs/buttons/jbtn.svg" alt="jb's site" style="image-rendering: pixelated;"/></a>
+                                <a href='https://pc98.club' target="_blank"><img src='./assets/index/buttons/pc98.gif' alt='PC98.CLUB'></a>
+                                <a href='https://reigen.moe' target="_blank"><img src='./assets/index/buttons/reigenmoe-badge.gif' alt='reigen.moe'></a>
+                                <a href="https://yatagarasu.nekoweb.org" target="_blank"><img src="./assets/index/buttons/yatagarasu.gif" alt="Yatagarasu"></a>
+                                <a href="https://nyscyra.nekoweb.org/" target="_blank"><img src="https://nyscyra.nekoweb.org/img/button.png" alt="nyscyra"></a>
+                                <a href='https://eyeorb.net' target="_blank"><img src='./assets/index/buttons/eyeorb.gif' alt='eyeorb'></a>
+                                <a href="https://bleu.nekoweb.org/" target="_blank"><img src="https://bleu.nekoweb.org/button.gif" alt="bleu"></a>
+                                <a href="https://rice.place/" target="_blank"><img src="https://rice.nekoweb.org/button/riceus.gif" alt="rice.place"></a>
+                                <a href="https://gator.nekoweb.org/" target="_blank"><img src="./assets/index/buttons/gator.png" alt="gator"></a>
+                                <a href="https://makoenergy.neocities.org/" target="_blank"><img src="./assets/index/buttons/mako.gif" alt="makoenergy"></a>
+                                <a href="https://medjed.nekoweb.org/" target="_blank"><img src="https://medjed.nekoweb.org/assets/images/button.jpg" alt="Medjed"></a>
+                                <a href='https://duducat.moe/' target="_blank"><img src='./assets/index/buttons/duducat.gif' alt='duducat'></a>
+                                <a href='https://www.virtuagirl.net/' target="_blank"><img src='./assets/index/buttons/virtuagirlbutton.gif' alt='virtua'></a>
+                </div>
+            </div>
+        </main>
     </div>
 </body>
 </html>
