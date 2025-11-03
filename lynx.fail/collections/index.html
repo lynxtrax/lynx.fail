@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.gif" />
+    <title>collections</title>
+  </head>
+  <body>
+   <nav>
+        <img src="/assets/logo.png" width="400" height="90">
+        <div id="right">
+            <div id="topbuttons">
+                <ul>
+                    <li><a href="/index.html">home</a></li>
+                    <li><a href="/about/index.html">about</a></li>
+                    <li><a href="/blog/index.html">blog</a></li>
+                    <li><a href="/gallery/index.html">gallery</a></li>
+                    <li><a href="/links/index.html">links</a></li>
+                </ul>
+            </div>
+            <div id="bottombuttons">
+                <ul>
+                    <li><a href="/medialog/index.html">medialog</a></li>
+                    <li><a href="/collections/index.html">collections</a></li>
+                    <li><a href="/shrines/index.html">shrines</a></li> 
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <footer>
+            <div>
+                <p>you are currently viewing fantasiz.ing version 3.0. this site was first created <span id="created"></span> 
+                    and last updated <span id="updated"></span>. it has <span id="visitors"></span> visitors!</p>
+                <p><i>2025 - furever</i></p>
+                <img src="/assets/fantasizing.gif">
+                <script>
+                // this script is under the MIT license (https://max.nekoweb.org/resources/license.txt)
+
+                let username = "fantasiz.ing"; // <<<--- Insert your username here!
+
+                (async () => {
+                    try {
+                    const request = await fetch(
+                        `https://nekoweb.org/api/site/info/${username}`
+                    );
+                    const json = await request.json();
+
+                    const updated = new Date(json.updated_at).toLocaleDateString(); // Formats Last Updated text
+                    const created = new Date(json.created_at).toLocaleDateString(); // Formats Creation Date text
+
+                    if (document.getElementById("created"))
+                        document.getElementById(
+                        "created"
+                        ).innerHTML = `<b>${created}</b>`;
+                    if (document.getElementById("updated"))
+                        document.getElementById(
+                        "updated"
+                        ).innerHTML = `<b>${updated}</b>`;
+                    if (document.getElementById("visitors"))
+                        document.getElementById(
+                        "visitors"
+                        ).innerHTML = `<b>${json.views}</b>`;
+                    if (document.getElementById("followers"))
+                        document.getElementById(
+                        "followers"
+                        ).innerHTML = `<b>${json.followers}</b> followers`;
+                    } catch (error) {
+                    console.error(error);
+                    // If you wish to insert some fallback here, you may do so!
+                    }
+                })();
+                </script>
+            </div>
+            <div>
+                    <a href="mailto:webmeowster@fantasiz.ing" target="_blank"><img src="/assets/mail.png" width="50" height="50"></a></li>
+                    <a href="https://discordapp.com/users/579374637159415808" target="_blank"><img src="/assets/discord.png" width="50" height="50"></a>
+                    <a href="https://www.instagram.com/fantasiz.ing/" target="_blank"><img src="/assets/ig.png" width="50" height="50"></a>
+                    <a href="https://www.last.fm/user/lynxtrax" target="_blank"><img src="/assets/lastfm.png" width="50" height="50"></a>
+                    <a href="https://artfight.net/~fantasizing" target="_blank"><img src="/assets/af.png" width="50" height="50"></a>
+                    <a href="https://toyhou.se/fantasizing" target="_blank"><img src="/assets/toyhouse.png" width="50" height="50"></a>
+            </div>
+    </footer>
+  </body>
+</html>
