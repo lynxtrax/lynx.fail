@@ -177,6 +177,9 @@ hr {
   main {
     width: 100%;
   }
+  #now, #lastfm {
+    width: 80%;
+  }
   #intro, header, footer {
     margin-left: 1rem;
     margin-right: 1rem;

@@ -4,14 +4,22 @@
     <channel>
         <title>lynx's rss feed!</title>
         <description>updates for my site</description>
-        <link>https://fantasiz.ing</link>
+        <link>https://lynx.fail</link>
+        <item>
+            <title>100 Webmaster Questions + More</title>
+            <description>saw quite a few sites doing these questions by mouseling.net and decided to do my take on it! also added a few buttons
+            and fixed my sitebox.</description>
+            <link>https://lynx.fail/blog/post2/</link>
+            <guid>post-11</guid>
+            <pubDate>Tue 04 Nov 2025, 21:26:00 -0500</pubDate>
+        </item>
         <item>
             <title>deploying lynx.fail</title>
             <description>even though it's far from finished, i'm going to go ahead and publish this version of the site! 
             tweaked about and blog pages a bit, hoping things look okay once it's online.</description>
             <link>https://lynx.fail/</link>
             <guid>post-10</guid>
-            <pubDate>Sun 02 Nov 2025, 012:34:00 -0500</pubDate>
+            <pubDate>Sun 02 Nov 2025, 12:34:00 -0500</pubDate>
         </item>
         <item>
             <title>okay bro what</title>
@@ -19,7 +27,7 @@
             to an old domain :sob: onto lynx.fail v1! started today. hopefully out soonnn. SORRY.</description>
             <link>https://lynx.fail/</link>
             <guid>post-10</guid>
-            <pubDate>Sat 01 Nov 2025, 020:57:00 -0500</pubDate>
+            <pubDate>Sat 01 Nov 2025, 20:57:00 -0500</pubDate>
         </item>
         <item>
             <title>started about page</title>
@@ -27,7 +35,7 @@
             different than every other page because i really want it to reflect me.</description>
             <link>https://fantasiz.ing/about/</link>
             <guid>post-9</guid>
-            <pubDate>Mon 27 Oct 2025, 012:13:00 -0500</pubDate>
+            <pubDate>Mon 27 Oct 2025, 12:13:00 -0500</pubDate>
         </item>
         <item>
             <title>v4 in the works</title>
