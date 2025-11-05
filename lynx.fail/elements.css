@@ -10,11 +10,11 @@
     width: 275px;
     height: 160px;
     position: absolute;
-    background: url(https://lynx.fail/assets/sitebox1.png);
+    background: url(https://lynxtrax.nekoweb.org/lynx.fail/assets/sitebox1.png);
     left: 0;
 }
 .site-box:hover::before {
-   background: url(https://lynx.fail/assets/sitebox2.png);
+   background: url(https:/lynxtrax.nekoweb.org/lynx.fail/assets/sitebox2.png);
    content:"";
    width: 275px;
    height: 160px;
@@ -84,7 +84,7 @@
   height: 15px;
   width: 15px;
   margin-left: 0.5em;
-  background: url(https://lynx.fail/assets/spiral.gif);
+  background: url(https://lynxtrax.nekoweb.org/lynx.fail/assets/spiral.gif);
   background-size: cover;
   display: inline-block;
 }
