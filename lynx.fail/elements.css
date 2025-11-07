@@ -5,23 +5,6 @@
 */
 
 /* Must start with ".site-box". Change how your website will appear on main nekoweb site: https://lune.dimden.dev/405a44b7e5.png */
-.site-box::before {
-  content: "";
-  width: 275px;
-  height: 160px;
-  position: absolute;
-  background: url(https://lynxtrax.nekoweb.org/lynx.fail/assets/sitebox2.png);
-  left: 0;
-}
-/*
-.site-box:hover::before {
-   background: url(https:/lynxtrax.nekoweb.org/lynx.fail/assets/sitebox2.png);
-   content:"";
-   width: 275px;
-   height: 160px;
-   position: absolute;
-}
-*/
 .site-box {
   text-align: center;
   background: black;
@@ -35,9 +18,16 @@
 }
 .site-box .sitefeature {
   display: block;
-  border: 0;
-  opacity: 0;
-  margin: 1.1em;
+  border: none;
+  width: 275px;
+  height: 160px;
+  opacity: 1;
+  margin-left: 0;
+  margin-top: 0;
+  background: url(https://lynx.fail/assets/sitebox1.png);
+}
+.site-box .sitefeature:hover {
+  background: url(https://lynx.fail/assets/sitebox2.png);
 }
 .site-box .sitefeature .screenshot {
   display: none;
