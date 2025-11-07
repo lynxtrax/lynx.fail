@@ -24,10 +24,10 @@
   opacity: 1;
   margin-left: 0;
   margin-top: 0;
-  background: url(https://lynx.fail/assets/sitebox1.png);
+  background: url(https://lynxtrax.nekoweb.org/lynx.fail/assets/sitebox1.png);
 }
 .site-box .sitefeature:hover {
-  background: url(https://lynx.fail/assets/sitebox2.png);
+  background: url(https://lynxtrax.nekoweb.org/lynx.fail/assets/sitebox2.png);
 }
 .site-box .sitefeature .screenshot {
   display: none;
