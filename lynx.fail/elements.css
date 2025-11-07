@@ -6,13 +6,14 @@
 
 /* Must start with ".site-box". Change how your website will appear on main nekoweb site: https://lune.dimden.dev/405a44b7e5.png */
 .site-box::before {
-    content:"";
-    width: 275px;
-    height: 160px;
-    position: absolute;
-    background: url(https://lynxtrax.nekoweb.org/lynx.fail/assets/sitebox1.png);
-    left: 0;
+  content: "";
+  width: 275px;
+  height: 160px;
+  position: absolute;
+  background: url(https://lynxtrax.nekoweb.org/lynx.fail/assets/sitebox2.png);
+  left: 0;
 }
+/*
 .site-box:hover::before {
    background: url(https:/lynxtrax.nekoweb.org/lynx.fail/assets/sitebox2.png);
    content:"";
@@ -20,16 +21,17 @@
    height: 160px;
    position: absolute;
 }
+*/
 .site-box {
-    text-align: center;
-    background: black;
-    background-image: url(); /* Only nekoweb URLs allowed, use full url to your site like https://example.nekoweb.org/images/coolbg.png */
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 0 30px;
-    font-size: 12px;
-    transition: 0.3s;
-    position: relative;
+  text-align: center;
+  background: black;
+  background-image: url(); /* Only nekoweb URLs allowed, use full url to your site like https://example.nekoweb.org/images/coolbg.png */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 30px;
+  font-size: 12px;
+  transition: 0.3s;
+  position: relative;
 }
 .site-box .sitefeature {
   display: block;
@@ -52,7 +54,7 @@
 }
 .site-box:hover {
   transform: scale(104%);
-  font-style:italic; 
+  font-style: italic;
 }
 
 /* Style for your 'Follow on Nekoweb' button (<iframe src="https://nekoweb.org/frame/follow" frameborder="0" width="170" height="28"></iframe>) */
@@ -61,11 +63,11 @@
   color: black;
   padding: 0.2rem;
   font-weight: bold;
-  background: #C4D237;
+  background: #c4d237;
   border: none;
   overflow: hidden;
   resize: none;
-  transition: 0.3s; 
+  transition: 0.3s;
   margin: 0;
 }
 .follow:hover {
@@ -75,11 +77,12 @@
   opacity: 0.8;
 }
 /* rss box */
-.post-box .post-author, .post-box .post-date {
+.post-box .post-author,
+.post-box .post-date {
   display: inline-block;
   font-weight: bold;
 }
-.post-box .post-author::after{
+.post-box .post-author::after {
   content: "";
   height: 15px;
   width: 15px;
@@ -92,7 +95,7 @@
   display: none;
 }
 .post-box {
-  background: #C24816;
+  background: #c24816;
   color: black;
   border: 0.2rem solid black;
   border-radius: 0;
@@ -101,7 +104,7 @@
   padding: 0.5rem;
 }
 .post-box .post-title {
-  color: #C4D237;
+  color: #c4d237;
   text-shadow: 0.1rem 0.2rem black;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -110,11 +113,10 @@
   margin-left: 1rem;
   margin-right: 0.5rem;
   padding: 1rem;
-  background: #C26516;
+  background: #c26516;
   margin-bottom: 0;
 }
 .post-box:hover {
-  font-style: italic; 
-  box-shadow: inset 0 0 1rem #C26516;
+  font-style: italic;
+  box-shadow: inset 0 0 1rem #c26516;
 }
-

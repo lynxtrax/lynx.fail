@@ -10,60 +10,68 @@
   </head>
   <body>
     <div>
-     <main>
-      <nav>
-        <li><a href="../index.html">home</a></li>
-        <li>✮</li>
-        <li><a href="">art</a></li>
-        <li>✮</li>
-        <li><a href="../blog/index.html">blog</a></li>
-        <li>✮</li>
-        <li><a href="">collections</a></li>
-        <li>✮</li>
-        <li><a href="">medialog</a></li>
-        <li>✮</li>
-        <li><a href="">shrines</a></li>
-        <li>✮</li>
-        <li><a href="">guestbook</a></li>
-      </nav>
-      <header>
-        <h1><i>ABOUT ME!</i></h1>
-      </header>
-      <div class="flex">
-        <div id="intro">
-          <p>
-            hii! you can just call me lynx. i'm a 19 y/o artist from midwest USA, 
-            currently just figuring out what i want to do in life. i love cats and
-            going to shows/raves. the art i dabble in ranges from sewing to clay,
-            though i mainly just draw digitally. i strive to make people smile ☺︎
-          </p>
-          <div style="text-align: center;">
-            <img src="../assets/about/stamps/peace.gif" height="31" width="88">
-            <img src="../assets/about/stamps/hardcorehappines.gif" height="31" width="88">
+      <main>
+        <nav>
+          <li><a href="../index.html">home</a></li>
+          <li>✮</li>
+          <li><a href="">art</a></li>
+          <li>✮</li>
+          <li><a href="../blog/index.html">blog</a></li>
+          <li>✮</li>
+          <li><a href="">collections</a></li>
+          <li>✮</li>
+          <li><a href="">medialog</a></li>
+          <li>✮</li>
+          <li><a href="">shrines</a></li>
+          <li>✮</li>
+          <li><a href="">misc</a></li>
+        </nav>
+        <header>
+          <h1><i>ABOUT ME!</i></h1>
+        </header>
+        <div class="flex">
+          <div id="intro">
+            <p>
+              hii! you can just call me lynx. i'm a 19 y/o artist from midwest
+              USA, currently just figuring out what i want to do in life. i love
+              cats and going to shows/raves. the art i dabble in ranges from
+              sewing to clay, though i mainly just draw digitally. i strive to
+              make people smile ☺︎
+            </p>
+            <div style="text-align: center">
+              <img
+                src="../assets/about/stamps/peace.gif"
+                height="31"
+                width="88"
+              />
+              <img
+                src="../assets/about/stamps/hardcorehappines.gif"
+                height="31"
+                width="88"
+              />
+            </div>
           </div>
-        </div>
-        <div id="lastfm">
-          <img src="../assets/about/music.gif">
-          <div id="listening">
-          </div>
-          <script>
-            // this script is under the MIT license (https://max.nekoweb.org/resources/license.txt)
-                        
-            const USERNAME = "lynxtrax"; // Put your LastFM username here
-            const BASE_URL = `https://lastfm-last-played.biancarosa.com.br/${USERNAME}/latest-song`;
+          <div id="lastfm">
+            <img src="../assets/about/music.gif" />
+            <div id="listening"></div>
+            <script>
+              // this script is under the MIT license (https://max.nekoweb.org/resources/license.txt)
 
-            const getTrack = async () => {
+              const USERNAME = "lynxtrax"; // Put your LastFM username here
+              const BASE_URL = `https://lastfm-last-played.biancarosa.com.br/${USERNAME}/latest-song`;
+
+              const getTrack = async () => {
                 const request = await fetch(BASE_URL);
                 const json = await request.json();
-                let status
+                let status;
 
-                let isPlaying = json.track['@attr']?.nowplaying || true;
+                let isPlaying = json.track["@attr"]?.nowplaying || true;
 
-                if(!isPlaying) {
-                    // Trigger if a song isn't playing
-                    return;
+                if (!isPlaying) {
+                  // Trigger if a song isn't playing
+                  return;
                 } else {
-                    // Trigger if a song is playing
+                  // Trigger if a song is playing
                 }
 
                 // Values:
@@ -72,88 +80,113 @@
                 // ARTIST: json.track.artist['#text']
 
                 document.getElementById("listening").innerHTML = `
-                <img src="${json.track.image[2]['#text']}">
+                <img src="${json.track.image[2]["#text"]}">
                 <div id="trackInfo">
                 <h3 id="trackName">${json.track.name}</h3>
-                <p id="artistName">${json.track.artist['#text']}</p>
+                <p id="artistName">${json.track.artist["#text"]}</p>
                 </div>
-                `
-            };
+                `;
+              };
 
-            getTrack();
-            setInterval(() => { getTrack(); }, 10000);
-          </script>
-        </div>
-      </div>
-      <div class="flex">
-        <div id="likes">
-          <div>
-            <details><summary>general</summary>
-              the colors green, orange, purple, and red!! chemistry (nuclear, polymer), biology (molecular, micro, cell) </details>
-            <hr>
-            <details><summary>music</summary>
-            happy hardcore, bubblegum pop, jazz, rock, industrial, etc. ROAR, Pierce the Veil, NIN, HEALTH, Machine Girl, Mitski, Glass Beach, The Cure, SOAD, hell just stalk my last.fm</details>
-            <hr>
-            <details><summary>games</summary>
-            Splatoon, Pokemon (B&W/B2&W2, ORAS, X&Y, PL:A), Cattails: Wildwood Story</details>
-            <hr>
-            <details><summary>food</summary>
-            strawberries, waffles, lychees, grilled cheese, green tea, matcha, macaroons, coconut, marshmallows, and way more LMAO</details>
-            <hr>
+              getTrack();
+              setInterval(() => {
+                getTrack();
+              }, 10000);
+            </script>
           </div>
         </div>
-        <div id="loadout">
-          <p>daily loadout babyyy</p>
-          <img src="../assets/about/loadout.png">
+        <div class="flex">
+          <div id="likes">
+            <div>
+              <details>
+                <summary>general</summary>
+                the colors green, orange, purple, and red!! chemistry (nuclear,
+                polymer), biology (molecular, micro, cell)
+              </details>
+              <hr />
+              <details>
+                <summary>music</summary>
+                happy hardcore, bubblegum pop, jazz, rock, industrial, etc.
+                ROAR, Pierce the Veil, NIN, HEALTH, Machine Girl, Mitski, Glass
+                Beach, The Cure, SOAD, hell just stalk my last.fm
+              </details>
+              <hr />
+              <details>
+                <summary>games</summary>
+                Splatoon, Pokemon (B&W/B2&W2, ORAS, X&Y, PL:A), Cattails:
+                Wildwood Story
+              </details>
+              <hr />
+              <details>
+                <summary>food</summary>
+                strawberries, waffles, lychees, grilled cheese, green tea,
+                matcha, macaroons, coconut, marshmallows, and way more LMAO
+              </details>
+              <hr />
+            </div>
+          </div>
+          <div id="loadout">
+            <p>daily loadout babyyy</p>
+            <img src="../assets/about/loadout.png" />
+          </div>
         </div>
-      </div>
-      <div class="flex">
-        <div id="plurrh">
-          <h1><a href="https://www.plurh.com/about/" target="_blank">PLURRH</a></h1>
-          <p><i>peace, love, unity, respect, responsibility, and hope!</i>
-            <br>
-            this movement has its roots in rave and EDM culture, but i think it's something everybody 
-            should strive to follow ♡ i aspire to live with plurrh in my heart. i really want to leave 
-            a positive mark on the people's lives that i'm in and hopefully inspire them to do the same 
-            to others.
-            <br>
-            i think spreading kindess and love is greatly needed, especially in times like these. it doesn't 
-            take much to be nice to the people around you. when i see bullies and bigots, i truly cannot comprehend
-            their way of living. all humans are beautiful and worthy of compassion as long as they have the capability 
-            to return it.
-          </p>
-          <div id="circle"></div>
+        <div class="flex">
+          <div id="plurrh">
+            <h1>
+              <a href="https://www.plurh.com/about/" target="_blank">PLURRH</a>
+            </h1>
+            <p>
+              <i>peace, love, unity, respect, responsibility, and hope!</i>
+              <br />
+              this movement has its roots in rave and EDM culture, but i think
+              it's something everybody should strive to follow ♡ i aspire to
+              live with plurrh in my heart. i really want to leave a positive
+              mark on the people's lives that i'm in and hopefully inspire them
+              to do the same to others.
+              <br />
+              i think spreading kindess and love is greatly needed, especially
+              in times like these. it doesn't take much to be nice to the people
+              around you. when i see bullies and bigots, i truly cannot
+              comprehend their way of living. all humans are beautiful and
+              worthy of compassion as long as they have the capability to return
+              it.
+            </p>
+            <div id="circle"></div>
+          </div>
+          <div id="stamps">
+            <img src="../assets/about/stamps/logout.png" />
+            <img src="../assets/about/stamps/explode.png" />
+            <img src="../assets/about/stamps/enjoyeverything.png" />
+            <img src="../assets/about/stamps/bloodstamp.jpg" />
+            <br />
+            <img src="../assets/about/blinkie/HATEGRAPHICDESIGN.gif" />
+            <img src="../assets/about/blinkie/loserboy.gif" />
+            <img src="../assets/about/blinkie/beltblinkie.gif" />
+          </div>
+          <div id="now">
+            <h2>NOW</h2>
+            <ul>
+              <li>watching: Digimon: Digital Monsters</li>
+              <li>playing: nothing!</li>
+              <li>listening to: Modest Mouse</li>
+              <li>reading: nothing!</li>
+              <li>working on: this website</li>
+            </ul>
+          </div>
         </div>
-        <div id="stamps">
-          <img src="../assets/about/stamps/logout.png">
-          <img src="../assets/about/stamps/explode.png">
-          <img src="../assets/about/stamps/enjoyeverything.png">
-          <img src="../assets/about/stamps/bloodstamp.jpg">
-          <br>
-          <img src="../assets/about/blinkie/HATEGRAPHICDESIGN.gif">
-          <img src="../assets/about/blinkie/loserboy.gif">
-          <img src="../assets/about/blinkie/beltblinkie.gif">
-        </div>
-        <div id="now">
-          <h2>NOW</h2>
-          <ul>
-            <li>watching: Digimon: Digital Monsters</li>
-            <li>playing: nothing!</li>
-            <li>listening to: Modest Mouse</li>
-            <li>reading: nothing!</li>
-            <li>working on: this website</li>
-          </ul>
-        </div>
-      </div>
-      <footer>
-        <a href="https://discord.com/users/579374637159415808"><img src="../assets/about/discord.png" alt=""></a>
-        <a href=""><img src="../assets/about/ig.png" alt=""></a>
-        <a href=""><img src="../assets/about/twitter.png" alt=""></a>
-        <a href=""><img src="../assets/about/bsky.png" alt=""></a>
-        <a href="https://www.last.fm/user/lynxtrax"><img src="../assets/about/lastfm.png" alt=""></a>
-      </footer>
-     </main>
-     <div id="pagedoll"></div>
+        <footer>
+          <a href="https://discord.com/users/579374637159415808"
+            ><img src="../assets/about/discord.png" alt=""
+          /></a>
+          <a href=""><img src="../assets/about/ig.png" alt="" /></a>
+          <a href=""><img src="../assets/about/twitter.png" alt="" /></a>
+          <a href=""><img src="../assets/about/bsky.png" alt="" /></a>
+          <a href="https://www.last.fm/user/lynxtrax"
+            ><img src="../assets/about/lastfm.png" alt=""
+          /></a>
+        </footer>
+      </main>
+      <div id="pagedoll"></div>
     </div>
   </body>
 </html>

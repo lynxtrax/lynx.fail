@@ -1,31 +1,31 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 @font-face {
-    font-family: 'Underground';
-    src: url(./Underground.ttf);
+  font-family: "Underground";
+  src: url(./Underground.ttf);
 }
 :root {
-  --base: #D2C0A6;   
-  --secondary: #BDA98B;
-  --tertiary: #B28E6F;
-  --accent: #7EAD41; 
-  --secondacc: #C4D237;
-  --thirdacc: #C26516;
-  --fouracc: #C24816;
+  --base: #d2c0a6;
+  --secondary: #bda98b;
+  --tertiary: #b28e6f;
+  --accent: #7ead41;
+  --secondacc: #c4d237;
+  --thirdacc: #c26516;
+  --fouracc: #c24816;
   --black: #000;
   --white: #fff;
 }
 body {
-    font-size: 100%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    animation: load .4s ease-out;
-    overflow-x: hidden;
-    margin: 0;
+  font-size: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  animation: load 0.4s ease-out;
+  overflow-x: hidden;
+  margin: 0;
 }
 @keyframes load {
   from {
-    opacity: .5;
+    opacity: 0.5;
     transform: translate(0, 2em);
   }
   to {
