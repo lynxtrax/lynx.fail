@@ -30,14 +30,21 @@ body {
   filter: none;
   transform: scale(105%);
 }
-section, main, nav, section>div, main>div {
+section,
+main,
+nav,
+section > div,
+main > div {
   margin: 0.5rem;
 }
 section {
   max-width: 150px;
-  background: var(--accent)
+  background: var(--accent);
 }
-nav, #stats, #follow, #status {
+nav,
+#stats,
+#follow,
+#status {
   box-shadow: 0.2rem 0.2rem var(--black);
 }
 nav {
@@ -57,14 +64,15 @@ nav a:hover {
   font-weight: bold;
 }
 .inactive a {
-  font-style:italic;
+  font-style: italic;
   text-decoration: line-through;
   color: var(--accent);
 }
 nav p {
   margin: 0;
 }
-nav ul, nav li {
+nav ul,
+nav li {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -84,7 +92,7 @@ main {
 }
 header h1 {
   margin: 0;
-  font-family: 'Underground';
+  font-family: "Underground";
   color: var(--fouracc);
   text-shadow: 0.1rem 0.2rem var(--black);
   margin-left: 1rem;
@@ -123,8 +131,10 @@ header h1 {
   margin: 0.5rem;
   background: var(--thirdacc);
   height: 225px;
+  width: 100%;
 }
-.status, #mood {
+.status,
+#mood {
   padding: 0.5rem;
   background: var(--accent);
 }
@@ -155,7 +165,7 @@ header h1 {
 }
 #button textarea:focus {
   outline: 0.15rem solid var(--fouracc);
-  box-shadow: inset 0 0 .5rem var(--white);
+  box-shadow: inset 0 0 0.5rem var(--white);
 }
 #buttons {
   background: var(--base);
@@ -234,14 +244,14 @@ of the marquee-items, and not all of their descendants.
 Make changes here if you want spaces in-between the
 marquee items or other effects and styles!*/
 .marquee-items > * {
-  margin: 0 .2rem;
+  margin: 0 0.2rem;
   height: 31px;
 }
 .paused {
-  -webkit-animation-play-state:paused;
-  -moz-animation-play-state:paused;
-  -o-animation-play-state:paused;
-  animation-play-state:paused;
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
 }
 
 /* mobile starts here */
@@ -264,7 +274,8 @@ marquee items or other effects and styles!*/
     align-items: flex-start;
   }
 
-  section, main {
+  section,
+  main {
     margin: 0.2rem;
   }
   main {
@@ -278,7 +289,10 @@ marquee items or other effects and styles!*/
     max-width: 300px;
     background-position: 0 2rem;
   }
-  #sitedoll, #status, #buttons, #button {
+  #sitedoll,
+  #status,
+  #buttons,
+  #button {
     width: 100%;
   }
 }
