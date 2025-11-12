@@ -6,6 +6,14 @@
         <description>updates for my site</description>
         <link>https://lynx.fail</link>
         <item>
+            <title>Aphantasia</title>
+            <description>new blog post - I experience something called Aphantasia and it affects my
+                  life to some degree.</description>
+            <link>https://lynx.fail/blog/post3/</link>
+            <guid>post-12</guid>
+            <pubDate>Tue 11 Nov 2025, 23:37:00 -0500</pubDate>
+        </item>
+        <item>
             <title>100 Webmaster Questions + More</title>
             <description>saw quite a few sites doing these questions by mouseling.net and decided to do my take on it! also added a few buttons
             and fixed my sitebox.</description>
