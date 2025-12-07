@@ -167,7 +167,7 @@ hr {
 #now li {
   list-style-type: none;
   margin: 0;
-  padding-left: 0.5rem;
+  padding: 0 0.5rem;
 }
 @media only screen and (max-width: 800px) {
   body {

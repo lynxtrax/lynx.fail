@@ -6,11 +6,18 @@
         <description>updates for my site</description>
         <link>https://lynx.fail</link>
         <item>
+            <title>misc page</title>
+            <description>new page out! ill put any pages i make for events or anything else here.</description>
+            <link>https://lynx.fail/misc/</link>
+            <guid>post-14</guid>
+            <pubDate>Sun 07 Dec 2025, 12:25:00 -0500</pubDate>
+        </item>
+        <item>
             <title>Aphantasia</title>
             <description>new blog post - I experience something called Aphantasia and it affects my
                   life to some degree.</description>
             <link>https://lynx.fail/blog/post3/</link>
-            <guid>post-12</guid>
+            <guid>post-13</guid>
             <pubDate>Tue 11 Nov 2025, 23:37:00 -0500</pubDate>
         </item>
         <item>
@@ -18,7 +25,7 @@
             <description>saw quite a few sites doing these questions by mouseling.net and decided to do my take on it! also added a few buttons
             and fixed my sitebox.</description>
             <link>https://lynx.fail/blog/post2/</link>
-            <guid>post-11</guid>
+            <guid>post-12</guid>
             <pubDate>Tue 04 Nov 2025, 21:26:00 -0500</pubDate>
         </item>
         <item>
@@ -26,7 +33,7 @@
             <description>even though it's far from finished, i'm going to go ahead and publish this version of the site! 
             tweaked about and blog pages a bit, hoping things look okay once it's online.</description>
             <link>https://lynx.fail/</link>
-            <guid>post-10</guid>
+            <guid>post-11</guid>
             <pubDate>Sun 02 Nov 2025, 12:34:00 -0500</pubDate>
         </item>
         <item>
