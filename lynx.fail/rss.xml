@@ -6,6 +6,13 @@
         <description>updates for my site</description>
         <link>https://lynx.fail</link>
         <item>
+            <title>small changes</title>
+            <description>reworked my old links page and updated the button wall, though its far from done and i will be changing the layout. cooking up a new index and stuff as well.. finally created a not_found page!</description>
+            <link>https://lynx.fail/links/</link>
+            <guid>post-16</guid>
+            <pubDate>Tue 29 Dec 2025, 11:38:00 -0500</pubDate>
+        </item>
+        <item>
             <title>secret shrine-ta</title>
             <description>i participated in a secret santa event for web shrines! i created a kandi shrine for lemonadehammer on neocities. check it out!</description>
             <link>https://lynx.fail/misc/shrineta/2025/</link>

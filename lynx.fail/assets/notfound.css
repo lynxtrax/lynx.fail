@@ -1,0 +1,14 @@
+body {
+  background: var(--black);
+  color: var(--accent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 99vh;
+}
+a {
+  color: var(--thirdacc);
+}
+a:hover {
+  color: var(--fouracc);
+}
