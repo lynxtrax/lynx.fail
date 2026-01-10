@@ -1,0 +1,201 @@
+body {
+  background: var(--black);
+  color: var(--secondacc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  color: var(--fouracc);
+  transition: 0.2s;
+  text-decoration: dotted underline;
+}
+a:hover {
+  font-style: italic;
+  color: var(--thirdacc);
+}
+.flex {
+  display: flex;
+  flex-wrap: nowrap;
+}
+#body {
+  gap: 0.5rem;
+}
+#intro {
+  color: grey;
+  text-align: right;
+}
+aside {
+  width: 300px;
+}
+.bggradient {
+  background: linear-gradient(90deg, var(--accent), #00000000);
+  width: 100%;
+  color: var(--black);
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+.status span {
+  color: grey;
+}
+/* discord widget */
+#status-blob {
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  margin-top: 5px;
+}
+#status-details {
+  margin: 0;
+  padding-right: 5px;
+}
+.status {
+  display: flex;
+  flex-direction: row;
+}
+.status span {
+  font-size: 9pt;
+  margin-top: 2px;
+  margin-left: 2px;
+}
+/* end discord widget */
+#status {
+  margin-top: 0.5rem;
+}
+#statuscafe {
+  background: #282828;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border: 4px dotted var(--black);
+}
+#statuscafe-content {
+  height: 50px;
+  overflow-y: auto;
+}
+#mood {
+  margin: 0;
+  border-top: 2px solid var(--black);
+  padding-top: 0.5rem;
+}
+#stats span {
+  color: var(--fouracc);
+}
+#follow {
+  background: var(--accent);
+  border: 4px dotted var(--black);
+  width: 127px;
+  height: 40px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+#updates iframe {
+  border: 0;
+  margin-bottom: 1rem;
+  height: 180px;
+}
+#graphics {
+  justify-content: center;
+  align-items: center;
+}
+#blinkies {
+  width: 150px;
+}
+#buttons {
+  width: 88px;
+}
+main {
+  text-align: right;
+}
+.base {
+  position: relative;
+}
+#base {
+  background: url("./images/base.png");
+  border: 4px solid var(--fouracc);
+  width: 1000px;
+  height: 740px;
+}
+.hover {
+  transition: 0.2s;
+}
+
+.base:has(.hover:hover) .hover2:not(:hover) {
+  filter: brightness(40%);
+}
+.base:has(.hover:hover) .hover:not(:hover) {
+  filter: brightness(40%);
+}
+
+#about {
+  background: url("./images/about.png");
+  position: absolute;
+  width: 247px;
+  height: 526px;
+  top: 200px;
+  left: 238px;
+}
+#art {
+  position: absolute;
+  background: url("./images/art.png");
+  width: 76px;
+  height: 50px;
+  top: 315px;
+  left: 125px;
+}
+#blog {
+  position: absolute;
+  background: url("./images/blog.png");
+  width: 43px;
+  height: 66px;
+  top: 338px;
+  left: 716px;
+}
+#guestbook {
+  position: absolute;
+  background: url("./images/guestbook.png");
+  width: 71px;
+  height: 52px;
+  top: 70px;
+  left: 50px;
+}
+#kittyrave {
+  position: absolute;
+  background: url("./images/kittyrave.png");
+  width: 101px;
+  height: 56px;
+  top: 165px;
+  left: 209px;
+}
+#misc {
+  position: absolute;
+  background: url("./images/misc.png");
+  width: 84px;
+  height: 61px;
+  top: 522px;
+  left: 4px;
+}
+#links {
+  position: absolute;
+  background: url("./images/links.png");
+  width: 126px;
+  height: 732px;
+  top: 0;
+  left: 867px;
+}
+#shrines {
+  position: absolute;
+  background: url("./images/shrines.png");
+  width: 204px;
+  height: 89px;
+  left: 544px;
+  top: 425px;
+}
+#medialog {
+  position: absolute;
+  background: url("./images/medialog.png");
+  width: 91px;
+  height: 69px;
+  left: 540px;
+  top: 220px;
+}

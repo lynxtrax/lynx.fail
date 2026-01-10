@@ -6,6 +6,13 @@
         <description>updates for my site</description>
         <link>https://lynx.fail</link>
         <item>
+            <title>new index</title>
+            <description>the new index has arrived! i really like it. other changes, mainly reorganizing my files a bit. still more to do. v1 is archived and can be found at v1.lynx.fail</description>
+            <link>https://lynx.fail/</link>
+            <guid>post-17</guid>
+            <pubDate>Fri 09 Jan 2026, 22:39:00 -0500</pubDate>
+        </item>
+        <item>
             <title>small changes</title>
             <description>reworked my old links page and updated the button wall, though its far from done and i will be changing the layout. cooking up a new index and stuff as well.. finally created a not_found page!</description>
             <link>https://lynx.fail/links/</link>

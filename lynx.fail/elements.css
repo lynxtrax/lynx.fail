@@ -33,7 +33,7 @@
   display: none;
 }
 .site-box > a > p {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   text-align: left;
   margin-left: 0.5rem;
   color: white;
@@ -49,16 +49,17 @@
 
 /* Style for your 'Follow on Nekoweb' button (<iframe src="https://nekoweb.org/frame/follow" frameborder="0" width="170" height="28"></iframe>) */
 .follow {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   color: black;
   padding: 0.2rem;
   font-weight: bold;
-  background: #c4d237;
+  background: #7ead41;
   border: none;
   overflow: hidden;
   resize: none;
   transition: 0.3s;
   margin: 0;
+  height: 30px;
 }
 .follow:hover {
   filter: brightness(0.7) contrast(150%);

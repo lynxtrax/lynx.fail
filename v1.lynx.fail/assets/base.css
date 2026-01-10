@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Underground";
+  src: url(./Underground.ttf);
+}
+:root {
+  --base: #d2c0a6;
+  --secondary: #bda98b;
+  --tertiary: #b28e6f;
+  --accent: #7ead41;
+  --secondacc: #c4d237;
+  --thirdacc: #c26516;
+  --fouracc: #c24816;
+  --black: #000;
+  --white: #fff;
+}
+body {
+  font-size: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  animation: load 0.4s ease-out;
+  overflow-x: hidden;
+  margin: 0;
+}
+@keyframes load {
+  from {
+    opacity: 0.5;
+    transform: translate(0, 2em);
+  }
+  to {
+    opacity: 1;
+  }
+}

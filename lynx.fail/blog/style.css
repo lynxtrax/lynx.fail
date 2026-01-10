@@ -1,0 +1,124 @@
+body {
+  background: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+}
+a {
+  color: var(--fouracc);
+  transition: 0.2s;
+}
+a:hover {
+  color: var(--thirdacc);
+}
+main {
+  background: linear-gradient(to bottom, var(--black) 50%, var(--fouracc));
+  width: 50rem;
+  padding: 1rem;
+  gap: 1rem;
+  border: 0.1rem solid var(--fouracc);
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+main::before {
+  content: "blog";
+  position: absolute;
+  top: -2rem;
+  left: 1rem;
+  color: var(--blue);
+  font-size: 150%;
+  font-style: italic;
+}
+#back {
+  background: linear-gradient(to bottom, var(--black), var(--fouracc));
+  width: 10em;
+  padding: 1rem 2.2rem;
+  text-align: center;
+  color: var(--white);
+  transition: 0.2s;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+#back:hover {
+  color: var(--white);
+  filter: brightness(0.7) contrast(150%);
+}
+#image {
+  height: 20rem;
+  width: 10rem;
+  background: url(./tree.jpg);
+  background-size: cover;
+}
+#posts,
+article {
+  width: 37rem;
+  background: var(--black);
+  height: 24.25rem;
+  padding: 1rem;
+  overflow: auto;
+  border: 0.1rem solid var(--fouracc);
+  color: var(--white);
+}
+#post {
+  margin-bottom: 1rem;
+}
+#post a {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  background: linear-gradient(to bottom, var(--black), var(--fouracc));
+  height: 7rem;
+  padding: 0.5rem;
+  transition: 0.2s;
+  text-decoration: none;
+}
+#post a:hover {
+  transform: translate(0, -0.5rem);
+  filter: brightness(0.7) contrast(150%);
+}
+#thumb {
+  height: 100%;
+  min-width: 8rem;
+  max-width: 8rem;
+  background: var(--thirdacc);
+  border: 0.1rem solid var(--secondary);
+  overflow: hidden;
+}
+#description {
+  width: 100%;
+  color: var(--white);
+}
+#description p {
+  margin: 0.5rem 0;
+}
+@media only screen and (max-width: 800px) {
+  #image {
+    display: none;
+  }
+  #back {
+    margin-bottom: 0;
+  }
+  #right {
+    height: 90%;
+  }
+  #posts,
+  main,
+  article {
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+  }
+  main {
+    flex-wrap: wrap;
+    height: 100%;
+  }
+  #post a,
+  #description {
+    height: auto;
+  }
+}

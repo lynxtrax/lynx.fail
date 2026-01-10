@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: var(--base);
+  color: var(--black);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  color: var(--fouracc);
+  transition: 0.2s;
+}
+a:hover {
+  color: var(--thirdacc);
+}
+.flex {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+main {
+  width: 40em;
+}
+nav li,
+nav ul {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+nav li:nth-child(even) {
+  color: var(--fouracc);
+}
+nav a {
+  color: var(--black);
+  transition: 0.2s;
+}
+nav a:hover {
+  color: var(--fouracc);
+}
+header,
+footer {
+  background: var(--accent);
+  border: 0.2rem solid var(--black);
+  border-radius: 0 10rem 2rem 0;
+  padding: 0.5rem;
+  box-shadow: 0.3rem 0.3rem var(--black);
+  margin-bottom: 1rem;
+}
+footer {
+  box-shadow: -0.3rem 0.3rem var(--black);
+  border-radius: 2rem 0 0 10rem;
+  text-align: center;
+}
+header h1 {
+  font-size: 40pt;
+  margin: 0;
+}
+#intro {
+  background: var(--secondary);
+  padding: 0.5rem;
+}
+#lastfm {
+  background: var(--secondacc);
+  padding: 0.5rem;
+  border: 0.2rem solid var(--black);
+}
+#listening {
+  display: flex;
+  width: 20rem;
+}
+#listening img {
+  height: 160px;
+  border: 0.2rem solid var(--black);
+}
+#trackInfo {
+  margin-left: 0.5rem;
+}
+#trackName {
+  font-style: italic;
+}
+#likes {
+  background: var(--tertiary);
+  border: 0.2rem solid var(--black);
+  width: 20rem;
+  height: 15rem;
+  position: relative;
+  padding: 1.5rem 1rem;
+}
+#likes {
+  transform: rotate(-3deg);
+  box-shadow: -0.2rem 0.2rem var(--black);
+}
+#likes::before {
+  content: "";
+  background: url(./images/heart.png);
+  height: 50px;
+  width: 50px;
+  background-size: cover;
+  position: absolute;
+  top: -1rem;
+}
+#likes::before {
+  left: -1rem;
+  transform: rotate(-7deg);
+}
+#likes div {
+  overflow: auto;
+  height: 13rem;
+}
+hr {
+  border: 0.1rem solid var(--black);
+}
+#loadout {
+  text-align: center;
+  margin-left: 1rem;
+  width: 20rem;
+  height: 15rem;
+}
+#loadout p {
+  margin: 0;
+}
+#plurrh {
+  position: relative;
+  z-index: 1;
+  height: 12rem;
+  width: 12rem;
+  text-align: center;
+}
+#plurrh h1 {
+  margin: 0;
+  padding: 0;
+}
+#plurrh p {
+  margin: 0;
+  height: 9rem;
+  overflow: auto;
+}
+#circle {
+  position: absolute;
+  z-index: -1;
+  height: 12rem;
+  width: 12rem;
+  border-radius: 50% 50%;
+  background: var(--secondacc);
+  top: 0;
+  left: 0;
+}
+#stamps {
+  width: 230px;
+  text-align: center;
+}
+#now {
+  background: var(--thirdacc)
+    linear-gradient(to bottom, var(--thirdacc), var(--fouracc));
+  border: 0.2rem solid var(--black);
+  width: 13rem;
+  height: 12rem;
+}
+#now h2 {
+  margin: 0;
+}
+#now ul,
+#now li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0.5rem;
+}
+@media only screen and (max-width: 800px) {
+  body {
+    height: auto;
+  }
+  .flex {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  main {
+    width: 100%;
+  }
+  #now,
+  #lastfm {
+    width: 80%;
+  }
+  #intro,
+  header,
+  footer {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}

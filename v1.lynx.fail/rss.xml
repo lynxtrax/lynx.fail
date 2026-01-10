@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="rss.xsl" type="text/xsl"?>
+<rss version="2.0">
+    <channel>
+        <title>lynx's rss feed!</title>
+        <description>updates for my site</description>
+        <link>https://lynx.fail</link>
+        <item>
+            <title>small changes</title>
+            <description>reworked my old links page and updated the button wall, though its far from done and i will be changing the layout. cooking up a new index and stuff as well.. finally created a not_found page!</description>
+            <link>https://lynx.fail/links/</link>
+            <guid>post-16</guid>
+            <pubDate>Tue 29 Dec 2025, 11:38:00 -0500</pubDate>
+        </item>
+        <item>
+            <title>secret shrine-ta</title>
+            <description>i participated in a secret santa event for web shrines! i created a kandi shrine for lemonadehammer on neocities. check it out!</description>
+            <link>https://lynx.fail/misc/shrineta/2025/</link>
+            <guid>post-15</guid>
+            <pubDate>Tue 23 Dec 2025, 11:31:00 -0500</pubDate>
+        </item>
+        <item>
+            <title>misc page</title>
+            <description>new page out! ill put any pages i make for events or anything else here.</description>
+            <link>https://lynx.fail/misc/</link>
+            <guid>post-14</guid>
+            <pubDate>Sun 07 Dec 2025, 12:25:00 -0500</pubDate>
+        </item>
+        <item>
+            <title>Aphantasia</title>
+            <description>new blog post - I experience something called Aphantasia and it affects my
+                  life to some degree.</description>
+            <link>https://lynx.fail/blog/post3/</link>
+            <guid>post-13</guid>
+            <pubDate>Tue 11 Nov 2025, 23:37:00 -0500</pubDate>
+        </item>
+        <item>
+            <title>100 Webmaster Questions + More</title>
+            <description>saw quite a few sites doing these questions by mouseling.net and decided to do my take on it! also added a few buttons
+            and fixed my sitebox.</description>
+            <link>https://lynx.fail/blog/post2/</link>
+            <guid>post-12</guid>
+            <pubDate>Tue 04 Nov 2025, 21:26:00 -0500</pubDate>
+        </item>
+        <item>
+            <title>deploying lynx.fail</title>
+            <description>even though it's far from finished, i'm going to go ahead and publish this version of the site! 
+            tweaked about and blog pages a bit, hoping things look okay once it's online.</description>
+            <link>https://lynx.fail/</link>
+            <guid>post-11</guid>
+            <pubDate>Sun 02 Nov 2025, 12:34:00 -0500</pubDate>
+        </item>
+        <item>
+            <title>okay bro what</title>
+            <description>nvm i decided i hated the fantasiz.ing 'brand' like purple is just not me so im going
+            to an old domain :sob: onto lynx.fail v1! started today. hopefully out soonnn. SORRY.</description>
+            <link>https://lynx.fail/</link>
+            <guid>post-10</guid>
+            <pubDate>Sat 01 Nov 2025, 20:57:00 -0500</pubDate>
+        </item>
+        <item>
+            <title>started about page</title>
+            <description>finally getting to other pages! started this one, it'll look way
+            different than every other page because i really want it to reflect me.</description>
+            <link>https://fantasiz.ing/about/</link>
+            <guid>post-9</guid>
+            <pubDate>Mon 27 Oct 2025, 12:13:00 -0500</pubDate>
+        </item>
+        <item>
+            <title>v4 in the works</title>
+            <description>whoops, haven't been updating this for a bit. we're already on v4?! 
+            anyways, working on the index for that right now. going to try to be more vigilant with
+            writing these ^^;</description>
+            <link>https://fantasiz.ing/</link>
+            <guid>post-8</guid>
+            <pubDate>Sat 25 Oct 2025, 08:32:00 -0500</pubDate>
+        </item>
+        <item>
+            <title>blog made</title>
+            <description>blog page now done, created a silly little preamble to it too ^_^</description>
+            <link>https://fantasiz.ing/blog/posts/post1</link>
+            <guid>post-7</guid>
+            <pubDate>Sun 20 Jul 2025, 12:29:00 -0500</pubDate>
+        </item>
+        <item>
+            <title>v3 out!</title>
+            <description>made a new version. happy about it! only links and about page filled for now.</description>
+            <link>https://fantasiz.ing</link>
+            <guid>post-6</guid>
+            <pubDate>Fri 18 Jul 2025, 23:51:00 -0500</pubDate>
+        </item>
+        <item>
+            <title>worked on about page a little</title>
+            <description>changing up the about page! far from finished, just a placeholder as i started to dislike the old one.</description>
+            <link>https://fantasiz.ing/about</link>
+            <guid>post-5</guid>
+            <pubDate>Sat 5 Jul 2025, 13:38:00 -0500</pubDate>
+        </item>
+        <item>
+            <title>new version out!</title>
+            <description>fantasiz.ing v2.0 is now live :3 consider checking it out!</description>
+            <link>https://fantasiz.ing</link>
+            <guid>post-4</guid>
+            <pubDate>Wed 18 Jun 2025, 16:55:00 -0500</pubDate>
+        </item>
+        <item>
+            <title>ok trying nekogit</title>
+            <description>couldn't figure out deploy2nekoweb :/ testing this</description>
+            <link>https://fantasiz.ing</link>
+            <guid>post-3</guid>
+            <pubDate>Mon 24 Mar 2025, 08:06:00 -0500</pubDate>
+        </item>
+        <item>
+            <title>attempting to optimize</title>
+            <description>my computer runs slow so i wasn't sure, so when i got on mobile i realized that my site *is* slow! removed and fixed something on mobile view. looking further into ways of making my site smaller</description>
+            <link>https://fantasiz.ing</link>
+            <guid>post-2</guid>
+            <pubDate>Mon 24 Mar 2025, 06:46:00 -0500</pubDate>
+        </item>
+        <item>
+            <title>site is up!!!</title>
+            <description>hello hello! fantasiz.ing v1 is now live :D super excited. not with git (yet?) but i'm glad to have it up at least.</description>
+            <link>https://fantasiz.ing</link>
+            <guid>post-1</guid>
+            <pubDate>Mon 24 Mar 2025, 02:37:00 -0500</pubDate>
+        </item>
+    </channel>
+</rss>
