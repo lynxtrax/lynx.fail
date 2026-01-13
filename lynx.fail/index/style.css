@@ -84,8 +84,8 @@ aside {
 #follow {
   background: var(--accent);
   border: 4px dotted var(--black);
-  width: 127px;
-  height: 40px;
+  width: 135px;
+  height: 45px;
   margin: 0 auto;
   margin-bottom: 1rem;
 }

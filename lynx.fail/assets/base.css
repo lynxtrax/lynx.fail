@@ -6,9 +6,9 @@
   src: url(./Underground.ttf);
 }
 :root {
-  --base: #d2c0a6;
-  --secondary: #bda98b;
-  --tertiary: #b28e6f;
+  --base: #262626;
+  --secondary: #3f3f3f;
+  --tertiary: #6c6c6c;
   --accent: #7ead41;
   --secondacc: #c4d237;
   --thirdacc: #c26516;

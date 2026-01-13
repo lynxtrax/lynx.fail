@@ -59,7 +59,8 @@
   resize: none;
   transition: 0.3s;
   margin: 0;
-  height: 30px;
+  height: 35px;
+  width: 128px;
 }
 .follow:hover {
   filter: brightness(0.7) contrast(150%);
