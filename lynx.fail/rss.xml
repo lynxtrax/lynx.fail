@@ -5,6 +5,13 @@
         <title>lynx's rss feed!</title>
         <description>updates for my site</description>
         <link>https://lynx.fail</link>
+         <item>
+            <title>2026 new year entry</title>
+            <description>joined 32-bit cafe's event for the new year. just writing about how my past year has been, and what i strive to do for this year.</description>
+            <link>https://lynx.fail/misc/32bitcafe/2026NewYear/</link>
+            <guid>post-19</guid>
+            <pubDate>Mon 19 Jan 2026, 23:19:00 -0500</pubDate>
+        </item>
         <item>
             <title>updated about + links page</title>
             <description>redid the about page and made the links page look nicer! blog and misc are next, then i'll move on to new pages. mobile versions will come.. eventually</description>
