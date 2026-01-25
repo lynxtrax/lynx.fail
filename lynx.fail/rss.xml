@@ -5,6 +5,13 @@
         <title>lynx's rss feed!</title>
         <description>updates for my site</description>
         <link>https://lynx.fail</link>
+        <item>
+            <title>medialog</title>
+            <description>got the medialog up and running! only 2 shows on there so far. but im glad to have got it up!</description>
+            <link>https://lynx.fail/medialog/</link>
+            <guid>post-20</guid>
+            <pubDate>Sat 24 Jan 2026, 19:52 -0500</pubDate>
+        </item>
          <item>
             <title>2026 new year entry</title>
             <description>joined 32-bit cafe's event for the new year. just writing about how my past year has been, and what i strive to do for this year.</description>
