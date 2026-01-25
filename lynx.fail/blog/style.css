@@ -17,6 +17,7 @@ a:hover {
 main {
   background: linear-gradient(to bottom, var(--black) 50%, var(--fouracc));
   width: 50rem;
+  height: 40rem;
   padding: 1rem;
   gap: 1rem;
   border: 0.1rem solid var(--fouracc);
@@ -28,8 +29,8 @@ main::before {
   content: "blog";
   position: absolute;
   top: -2rem;
-  left: 1rem;
-  color: var(--blue);
+  left: 0;
+  color: var(--white);
   font-size: 150%;
   font-style: italic;
 }
@@ -57,7 +58,7 @@ main::before {
 article {
   width: 37rem;
   background: var(--black);
-  height: 24.25rem;
+  height: 100%;
   padding: 1rem;
   overflow: auto;
   border: 0.1rem solid var(--fouracc);
@@ -78,14 +79,14 @@ article {
 }
 #post a:hover {
   transform: translate(0, -0.5rem);
-  filter: brightness(0.7) contrast(150%);
+  filter: brightness(0.6);
 }
 #thumb {
   height: 100%;
   min-width: 8rem;
   max-width: 8rem;
-  background: var(--thirdacc);
-  border: 0.1rem solid var(--secondary);
+  background: var(--black);
+  border: 0.1rem solid var(--fouracc);
   overflow: hidden;
 }
 #description {

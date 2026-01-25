@@ -39,3 +39,7 @@ ul {
   height: 98px;
   overflow-y: auto;
 }
+#pastEntries {
+  height: 120px;
+  overflow-y: auto;
+}

@@ -1,5 +1,76 @@
-#otherSites {
-  display: inline-block;
+body {
+  display: flex;
+  margin: 0;
+  background-color: var(--base);
+  color: var(--two);
+}
+a {
+  color: var(--thirdacc);
+  transition: 0.2s;
+}
+a:hover {
+  font-style: italic;
+  color: var(--two);
+}
+main {
+  width: 40%;
+  border-right: 0.2rem solid var(--tertiary);
   text-align: center;
-  margin: 0 auto;
+  padding: 1rem;
+  background: var(--secondary);
+  color: var(--black);
+  box-shadow: 0.5rem 0 1rem var(--black);
+}
+main a {
+  color: var(--thirdacc);
+}
+main a:hover {
+  color: var(--fouracc);
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+h2 span {
+  color: var(--fouracc);
+}
+#dim {
+  margin: 0;
+  color: var(--base);
+}
+#top h3 {
+  margin: 1rem 0;
+}
+#log {
+  text-align: left;
+}
+.span {
+  font-size: 10pt;
+}
+hr {
+  width: 80%;
+  margin-left: 0;
+  border: 0.1rem solid var(--base);
+}
+#entry {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+#shows,
+#movies,
+#books {
+  background: linear-gradient(var(--secondary), var(--tertiary));
+}
+#details p {
+  margin: 0;
+}
+aside {
+  padding-left: 1rem;
+  width: 30%;
+}
+aside h1 {
+  color: var(--fouracc);
+  text-shadow: none;
 }
