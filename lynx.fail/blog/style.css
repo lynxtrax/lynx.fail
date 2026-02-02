@@ -1,67 +1,73 @@
 body {
-  background: var(--black);
+  background: url("./path.jpg"), var(--black);
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  flex-wrap: wrap;
   overflow-x: hidden;
+  height: 98vh;
+  margin: 0;
 }
 a {
-  color: var(--fouracc);
+  color: var(--accent);
   transition: 0.2s;
 }
 a:hover {
-  color: var(--thirdacc);
+  color: var(--secondacc);
 }
-main {
-  background: linear-gradient(to bottom, var(--black) 50%, var(--fouracc));
+#wrapper {
   width: 50rem;
-  height: 40rem;
-  padding: 1rem;
-  gap: 1rem;
-  border: 0.1rem solid var(--fouracc);
-  position: relative;
-  display: flex;
-  justify-content: center;
+  border: 0.2rem solid var(--white);
+  box-shadow: 0 0 1rem var(--white);
 }
-main::before {
-  content: "blog";
-  position: absolute;
-  top: -2rem;
-  left: 0;
+#banner {
+  width: 100%;
+  background: url("./bannerblog.jpg");
+  height: 15rem;
+  background-size: cover;
+  background-position: 0 -10rem;
+  padding: 1rem;
+  border-bottom: 0.2rem solid var(--white);
+}
+#banner h1 {
+  margin: 0;
+  padding-top: 9.5rem;
   color: var(--white);
-  font-size: 150%;
-  font-style: italic;
 }
 #back {
-  background: linear-gradient(to bottom, var(--black), var(--fouracc));
-  width: 10em;
-  padding: 1rem 2.2rem;
   text-align: center;
   color: var(--white);
   transition: 0.2s;
   display: inline-block;
   margin-bottom: 1rem;
+  text-decoration: dotted underline;
 }
 #back:hover {
+  font-style: italic;
+}
+main {
+  padding: 1rem;
+  gap: 1rem;
+  display: flex;
+  justify-content: center;
+  background: var(--base);
   color: var(--white);
-  filter: brightness(0.7) contrast(150%);
 }
 #image {
-  height: 20rem;
+  height: 10rem;
   width: 10rem;
-  background: url(./tree.jpg);
+  background: url(./blogicon.jpg);
   background-size: cover;
+  border: 0.1rem solid var(--white);
 }
 #posts,
 article {
-  width: 37rem;
-  background: var(--black);
-  height: 100%;
+  height: 30rem;
+  background: var(--secondary);
   padding: 1rem;
   overflow: auto;
-  border: 0.1rem solid var(--fouracc);
+  border: 0.1rem solid var(--white);
   color: var(--white);
 }
 #post {
@@ -71,7 +77,7 @@ article {
   display: flex;
   gap: 1rem;
   width: 100%;
-  background: linear-gradient(to bottom, var(--black), var(--fouracc));
+  background: linear-gradient(#00000000, var(--base));
   height: 7rem;
   padding: 0.5rem;
   transition: 0.2s;
@@ -86,37 +92,48 @@ article {
   min-width: 8rem;
   max-width: 8rem;
   background: var(--black);
-  border: 0.1rem solid var(--fouracc);
+  border: 0.1rem solid var(--accent);
   overflow: hidden;
 }
 #description {
   width: 100%;
   color: var(--white);
 }
+#description p:first-child {
+  color: var(--accent);
+}
 #description p {
   margin: 0.5rem 0;
 }
 @media only screen and (max-width: 800px) {
+  body {
+    display: flex;
+    min-height: 100vh;
+    height: 100%;
+    align-items: normal;
+    justify-content: center;
+  }
   #image {
     display: none;
   }
   #back {
     margin-bottom: 0;
   }
-  #right {
-    height: 90%;
+  #wrapper {
+    width: 95%;
+    height: fit-content;
   }
-  #posts,
-  main,
-  article {
-    flex-wrap: nowrap;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
+  #banner {
+    background-size: cover;
+    background-position: 0;
   }
   main {
     flex-wrap: wrap;
-    height: 100%;
+  }
+  #posts,
+  article {
+    overflow: auto;
+    height: 38rem;
   }
   #post a,
   #description {
