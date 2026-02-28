@@ -54,6 +54,9 @@ main {
   background: var(--base);
   color: var(--white);
 }
+#left {
+  width: 10rem;
+}
 #image {
   height: 10rem;
   width: 10rem;
@@ -105,6 +108,9 @@ article {
 #description p {
   margin: 0.5rem 0;
 }
+.image {
+  width: 100%;
+}
 @media only screen and (max-width: 800px) {
   body {
     display: flex;
@@ -133,10 +139,13 @@ article {
   #posts,
   article {
     overflow: auto;
-    height: 38rem;
+    height: 100%;
   }
   #post a,
   #description {
     height: auto;
+  }
+  #left {
+    width: 100%;
   }
 }
