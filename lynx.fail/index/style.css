@@ -21,7 +21,8 @@ a:hover {
 #body {
   gap: 0.5rem;
 }
-#intro {
+#intro,
+#intro2 {
   color: grey;
   text-align: right;
 }
@@ -198,4 +199,25 @@ main {
   height: 69px;
   left: 540px;
   top: 220px;
+}
+#mobilemain {
+  display: none;
+}
+@media only screen and (max-width: 1300px) {
+  #body {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  main,
+  #intro {
+    display: none;
+  }
+  #body {
+    align-items: center;
+  }
+  #mobilemain {
+    display: block;
+  }
 }

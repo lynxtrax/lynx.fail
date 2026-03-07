@@ -6,6 +6,13 @@
         <description>updates for my site</description>
         <link>https://lynx.fail</link>
         <item>
+            <title>making things mobile-responsive</title>
+            <description>a few pages were inaccessible on mobile (index, about, medialog) so i changed that! well, i half-assed the index oops.. but atleast you can actually navigate it :P</description>
+            <link>https://lynx.fail/about/</link>
+            <guid>post-24</guid>
+            <pubDate>Sat 07 Mar 2026, 18:02 -0500</pubDate>
+        </item>
+        <item>
             <title>new blog - i got a 3DS!</title>
             <description>yapping about my 3DS i bought and modding it yayy!</description>
             <link>https://lynx.fail/blog/posts/post4.html</link>

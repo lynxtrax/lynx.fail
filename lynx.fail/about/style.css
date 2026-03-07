@@ -3,8 +3,6 @@ body {
   align-items: center;
   justify-content: center;
   background: var(--base);
-  height: 98vh;
-  overflow-y: hidden;
   color: var(--secondacc);
 }
 #body {
@@ -108,4 +106,15 @@ main {
 }
 summary {
   color: var(--accent);
+}
+@media only screen and (max-width: 1300px) {
+  #doll {
+    display: none;
+  }
+}
+@media only screen and (max-width: 800px) {
+  body,
+  .flex {
+    flex-wrap: wrap;
+  }
 }
