@@ -1,10 +1,6 @@
 * {
   box-sizing: border-box;
 }
-@font-face {
-  font-family: "Underground";
-  src: url(./Underground.ttf);
-}
 :root {
   --base: #191919;
   --secondary: #3f3f3f;

@@ -1,0 +1,7 @@
+body {
+  background: var(--base);
+  color: var(--white);
+}
+a {
+  color: var(--accent);
+}
