@@ -53,6 +53,9 @@ hr {
   margin-left: 0;
   border: 0.1rem solid var(--base);
 }
+#details hr {
+  margin: 2px;
+}
 #entry {
   display: flex;
   gap: 0.5rem;
