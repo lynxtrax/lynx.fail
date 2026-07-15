@@ -1,0 +1,20 @@
+body {
+  background: linear-gradient(var(--base), var(--black)), var(--black);
+  color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 98vh;
+}
+a {
+  color: var(--two);
+  text-decoration: dotted underline;
+  transition: 0.2s;
+}
+a:hover {
+  color: var(--thirdacc);
+  font-style: italic;
+}
+h1 {
+  color: white;
+}

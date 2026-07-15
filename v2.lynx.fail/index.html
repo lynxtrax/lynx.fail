@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index/style.css" />
+    <link rel="stylesheet" href="./assets/base.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/spiral.gif" />
+    <title>lynx.fail</title>
+  </head>
+  <!-- hello hi!!! -->
+  <body>
+    <div id="width">
+      <div id="intro">
+        <p>
+          welcome to lynx.fail! ^_^ this is my little room on the web. click
+          around for different pages, the clickable objects are highlighted!
+          <br />
+          a sitemap can be found at the bottom right for accessibility.
+        </p>
+      </div>
+      <div class="flex" id="body">
+        <aside>
+          <p class="bggradient">what's up?</p>
+          <div class="status">
+            <p id="status-details">loading...</p>
+            <div id="status-blob"></div>
+            <span>(via discord)</span>
+          </div>
+          <script src="./index/discord.js" defer></script>
+          <div id="status">
+            <div id="statuscafe-username">username loading...</div>
+            <div id="statuscafe">
+              <div id="statuscafe-content">statuscafe loading...</div>
+              <p id="mood">
+                i'm currently feeling
+                <a href="https://www.imood.com/users/kittyrave">
+                  <img
+                    src="https://moods.imood.com/display/uname-kittyrave/fg-c4d237/trans-1/imood.gif"
+                    alt="The current mood of kittyrave at www.imood.com"
+                  />
+                </a>
+              </p>
+            </div>
+            <script
+              src="https://status.cafe/current-status.js?name=lynx"
+              defer
+            ></script>
+          </div>
+          <div id="stats">
+            <p>
+              this site has been online since
+              <span id="created">date loading...</span> and was last updated
+              <span id="updated">date loading...</span>. i've had
+              <span id="visitors">number loading...</span> visitors!!
+            </p>
+            <p>
+              nekoweb followers: <span id="followers">number loading...</span>
+            </p>
+            <script defer>
+              // this script is under the MIT license (https://max.nekoweb.org/resources/license.txt)
+
+              let domain = "lynx.fail"; // <<<--- Insert your domain here!
+
+              (async () => {
+                try {
+                  const request = await fetch(
+                    `https://nekoweb.org/api/site/info/${domain}`,
+                  );
+                  const json = await request.json();
+
+                  const updated = new Date(
+                    json.updated_at,
+                  ).toLocaleDateString(); // Formats Last Updated text
+                  const created = new Date(
+                    json.created_at,
+                  ).toLocaleDateString(); // Formats Creation Date text
+
+                  if (document.getElementById("created"))
+                    document.getElementById("created").innerHTML = `${created}`;
+                  if (document.getElementById("updated"))
+                    document.getElementById("updated").innerHTML = `${updated}`;
+                  if (document.getElementById("visitors"))
+                    document.getElementById("visitors").innerHTML =
+                      `${json.views}`;
+                  if (document.getElementById("followers"))
+                    document.getElementById("followers").innerHTML =
+                      `${json.followers}`;
+                } catch (error) {
+                  console.error(error);
+                  // If you wish to insert some fallback here, you may do so!
+                }
+              })();
+            </script>
+          </div>
+          <div id="follow">
+            <iframe
+              src="https://nekoweb.org/frame/follow"
+              frameborder="0"
+              width="127"
+              height="40"
+            ></iframe>
+          </div>
+          <div id="updates">
+            <a href="https://lynx.fail/rss.xml" target="_blank"
+              >RSS <img src="./index/images/rss.png"
+            /></a>
+            <iframe src="./rss.xml"></iframe>
+          </div>
+          <div>
+            <div id="clock"></div>
+            <script>
+              function updateClock() {
+                const clockElement = document.getElementById("clock");
+                if (clockElement) {
+                  // Force both to en-US to ensure consistent AM/PM
+                  const locale = "en-US";
+
+                  const localTime = new Date().toLocaleTimeString(locale, {
+                    hour: "2-digit",
+                    minute: "2-digit",
+                    hour12: true,
+                  });
+
+                  const myTime = new Date().toLocaleString(locale, {
+                    timeZone: "America/New_York",
+                    hour: "2-digit",
+                    minute: "2-digit",
+                    hour12: true,
+                  });
+
+                  clockElement.innerHTML = `
+        <div><b>local time:</b> ${localTime}</div>
+        <div><b>lynx's time:</b> ${myTime}</div>
+      `;
+                }
+              }
+
+              setInterval(updateClock, 60000);
+              updateClock();
+            </script>
+          </div>
+          <div id="graphics" class="flex">
+            <div id="blinkies">
+              <img src="./index/images/TDS.gif" />
+              <img src="./index/images/autumn.gif" />
+              <img src="./index/images/radioactive2.webp" />
+              <img src="./index/images/biohazardous.gif" />
+            </div>
+            <div id="buttons">
+              <img src="./index/images/peace2.gif" />
+              <img src="./index/images/musicfreak.gif" />
+              <img src="./index/images/handcoded.gif" />
+            </div>
+          </div>
+        </aside>
+        <main>
+          <div class="base">
+            <div id="base" class="hover2"></div>
+            <a href="./about/index.html"
+              ><div id="about" class="hover"></div
+            ></a>
+            <a href="https://art.lynx.fail/"
+              ><div id="art" class="hover"></div
+            ></a>
+            <a href="./blog/index.html"><div id="blog" class="hover"></div></a>
+            <a href="https://lynx.atabook.org/"
+              ><div id="guestbook" class="hover"></div
+            ></a>
+            <a href="https://kittyrave.club"
+              ><div id="kittyrave" class="hover"></div
+            ></a>
+            <a href="./misc/index.html"><div id="misc" class="hover"></div></a>
+            <a href="./links/index.html"
+              ><div id="links" class="hover"></div
+            ></a>
+            <a href="#"><div id="shrines" class="hover"></div></a>
+            <a href="./medialog/index.html"
+              ><div id="medialog" class="hover"></div
+            ></a>
+          </div>
+          <div>
+            <a href="./sitemap/index.html">sitemap</a>
+            <br />
+            <img src="./assets/lynx.png" width="88" height="31" />
+          </div>
+        </main>
+        <div id="mobilemain">
+          <div id="intro2">
+            <p>
+              you are currently viewing the mobile version of lynx.fail! this
+              website is designed for devices 1000px and wider. visit your
+              desktop for the full experience! ☺︎
+            </p>
+            <p>
+              eventually i'd like to have a special layout with drawn assets for
+              mobile users to look at. for now, here is the
+              <a href="./sitemap/index.html">sitemap</a> >_> most pages should
+              be accessible.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

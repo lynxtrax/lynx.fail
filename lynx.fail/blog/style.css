@@ -1,77 +1,20 @@
-body {
-  background: url("./path.jpg"), var(--black);
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow-x: hidden;
-  height: 98vh;
+h1 {
   margin: 0;
-}
-a {
+  padding: 0;
   color: var(--accent);
-  transition: 0.2s;
-}
-a:hover {
-  color: var(--secondacc);
-}
-#wrapper {
-  width: 50rem;
-  border: 0.2rem solid var(--white);
-  box-shadow: 0 0 1rem var(--white);
-}
-#banner {
-  width: 100%;
-  background: url("./bannerblog.jpg");
-  height: 15rem;
-  background-size: cover;
-  background-position: 0 -10rem;
-  padding: 1rem;
-  border-bottom: 0.2rem solid var(--white);
-}
-#banner h1 {
-  margin: 0;
-  padding-top: 9.5rem;
-  color: var(--white);
 }
 #back {
-  text-align: center;
-  color: var(--white);
   transition: 0.2s;
-  display: inline-block;
   margin-bottom: 1rem;
   text-decoration: dotted underline;
 }
 #back:hover {
   font-style: italic;
 }
-main {
-  padding: 1rem;
-  gap: 1rem;
-  display: flex;
-  justify-content: center;
-  background: var(--base);
-  color: var(--white);
-}
-#left {
-  width: 10rem;
-}
-#image {
-  height: 10rem;
-  width: 10rem;
-  background: url(./blogicon.jpg);
-  background-size: cover;
-  border: 0.1rem solid var(--white);
-}
 #posts,
 article {
-  height: 30rem;
-  background: var(--secondary);
-  padding: 1rem;
   overflow: auto;
-  border: 0.1rem solid var(--white);
-  color: var(--white);
+  color: #bababa;
 }
 #post {
   margin-bottom: 1rem;
@@ -89,6 +32,7 @@ article {
 #post a:hover {
   transform: translate(0, -0.5rem);
   filter: brightness(0.6);
+  color: var(--secondacc);
 }
 #thumb {
   height: 100%;
@@ -105,47 +49,39 @@ article {
 #description p:first-child {
   color: var(--accent);
 }
+#post:nth-child(6n + 2) #thumb {
+  border: 0.1rem solid var(--secondacc);
+}
+#post:nth-child(6n + 2) #description p:first-child {
+  color: var(--secondacc);
+}
+#post:nth-child(6n + 3) #thumb {
+  border: 0.1rem solid var(--inbetween);
+}
+#post:nth-child(6n + 3) #description p:first-child {
+  color: var(--inbetween);
+}
+#post:nth-child(6n + 4) #thumb {
+  border: 0.1rem solid var(--two);
+}
+#post:nth-child(6n + 4) #description p:first-child {
+  color: var(--two);
+}
+#post:nth-child(6n + 5) #thumb {
+  border: 0.1rem solid var(--thirdacc);
+}
+#post:nth-child(6n + 5) #description p:first-child {
+  color: var(--thirdacc);
+}
+#post:nth-child(6n + 6) #thumb {
+  border: 0.1rem solid var(--fouracc);
+}
+#post:nth-child(6n + 6) #description p:first-child {
+  color: var(--fouracc);
+}
 #description p {
   margin: 0.5rem 0;
 }
 .image {
   width: 100%;
-}
-@media only screen and (max-width: 800px) {
-  body {
-    display: flex;
-    min-height: 100vh;
-    height: 100%;
-    align-items: normal;
-    justify-content: center;
-  }
-  #image {
-    display: none;
-  }
-  #back {
-    margin-bottom: 0;
-  }
-  #wrapper {
-    width: 95%;
-    height: fit-content;
-  }
-  #banner {
-    background-size: cover;
-    background-position: 0;
-  }
-  main {
-    flex-wrap: wrap;
-  }
-  #posts,
-  article {
-    overflow: auto;
-    height: 100%;
-  }
-  #post a,
-  #description {
-    height: auto;
-  }
-  #left {
-    width: 100%;
-  }
 }

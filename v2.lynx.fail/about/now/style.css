@@ -1,0 +1,45 @@
+body {
+  background: var(--secondary);
+  color: var(--secondacc);
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 305px;
+  max-height: 252px;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+a {
+  color: var(--thirdacc);
+  text-decoration: dotted underline;
+  transition: 0.2s;
+}
+a:hover {
+  color: var(--fouracc);
+}
+h2 {
+  margin: 0;
+  padding: 0;
+  color: var(--accent);
+}
+span {
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  font-size: 10pt;
+  color: var(--tertiary);
+}
+hr {
+  border: 1px solid var(--secondacc);
+}
+li {
+  list-style-type: square;
+}
+ul {
+  padding-left: 1.5rem;
+  height: 98px;
+  overflow-y: auto;
+}
+#pastEntries {
+  height: 120px;
+  overflow-y: auto;
+}

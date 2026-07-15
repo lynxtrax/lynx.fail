@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../assets/base.css" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="icon" type="image/x-icon" href="../assets/spiral.gif" />
+    <title>about</title>
+  </head>
+  <body>
+    <div id="body">
+      <a id="back" href="../index.html">back</a>
+      <main class="flex">
+        <div id="left">
+          <h1>About...</h1>
+          <div class="flex">
+            <img
+              id="profile"
+              src="./images/kisses.jpg"
+              width="190"
+              height="190"
+            />
+            <div id="webmeowster">
+              <h2>the webmeowster</h2>
+              <p>
+                hii! you can just call me lynx. i'm a 20 y/o artist from midwest
+                USA, currently just figuring out what i want to do in life. i
+                love cats and going to shows/raves. the art i dabble in ranges
+                from sewing to clay, though i mainly just draw digitally. i
+                strive to make people smile ☺︎
+              </p>
+            </div>
+          </div>
+          <div id="siteinfo">
+            <h2>the site</h2>
+            <p>
+              i created this site as a way to sort my brain: my interests, who i
+              am, my thoughts-- as well as store my art. i've had websites
+              before, but none of them got very far. i want to break the cycle
+              with lynx.fail!
+              <br />
+              i started creating sites in 2020? 2021? you may recognize me as
+              konfetti or biocatzard on neocities, as well as briefly
+              kittyrave.club and fantasiz.ing (the former domain i still plan on
+              using).
+              <br />
+              i'll be honest! i'm a very bad coder. i wish it was something my
+              brain could pick up more easily. maybe at some point i'll be able
+              to. i'm just not a very technical person! HTML and CSS are fine,
+              but i cannot wrap my head around JS >_>
+              <br />
+              this site is kind of a test to myself. how far can i develop it?
+              i'm a bit of a perfectionist if a perfectionist was actually
+              horrible at everything they did. i keep redoing layouts, remaking
+              content. i need to like it!! then i go back the next day and
+              change it. but i want to get out of that habit so i can actually
+              DO shit!
+            </p>
+          </div>
+          <div class="flex" id="bottom">
+            <div id="contact">
+              <a href="https://discord.com/users/579374637159415808"
+                ><img src="./images/discord.png" alt="discord"
+              /></a>
+              <a href="https://bsky.app/profile/lynx.fail"
+                ><img src="./images/bsky.png" alt="bluesky"
+              /></a>
+              <a href="https://www.last.fm/user/lynxtrax"
+                ><img src="./images/lastfm.png" alt="lastfm"
+              /></a>
+              <p>
+                i used to be a big twitterhead but i deleted it late 2024 and it
+                improved my mental health immensely. now i rarely post on
+                anything! i do plan on being more active on bsky posting-wise.
+                <br />
+                i do have a twitter and instagram, but those are purely for
+                following artists i like.
+                <br />
+                if you need to email me, i can be found at
+                nuclear(at)chemist(dot)com
+              </p>
+            </div>
+            <div id="now">
+              <iframe src="./now/index.html"></iframe>
+            </div>
+          </div>
+        </div>
+        <div id="right" class="flex">
+          <div id="doll"></div>
+          <div id="aside">
+            <div id="music">
+              <p><img src="./images/music.gif" /> last listened to:</p>
+              <div id="listening"></div>
+              <script>
+                // this script is under the MIT license (https://max.nekoweb.org/resources/license.txt)
+
+                const USERNAME = "lynxtrax"; // Put your LastFM username here
+                const BASE_URL = `https://lastfm-last-played.biancarosa.com.br/${USERNAME}/latest-song`;
+
+                const getTrack = async () => {
+                  const request = await fetch(BASE_URL);
+                  const json = await request.json();
+                  let status;
+
+                  let isPlaying = json.track["@attr"]?.nowplaying || true;
+
+                  if (!isPlaying) {
+                    // Trigger if a song isn't playing
+                    return;
+                  } else {
+                    // Trigger if a song is playing
+                  }
+
+                  // Values:
+                  // COVER IMAGE: json.track.image[1]['#text']
+                  // TITLE: json.track.name
+                  // ARTIST: json.track.artist['#text']
+
+                  document.getElementById("listening").innerHTML = `
+                <img src="${json.track.image[2]["#text"]}" height="160" width="160">
+                <div id="trackInfo">
+                <h3 id="trackName">${json.track.name}</h3>
+                <p id="artistName">${json.track.artist["#text"]}</p>
+                </div>
+                `;
+                };
+
+                getTrack();
+                setInterval(() => {
+                  getTrack();
+                }, 10000);
+              </script>
+            </div>
+            <div id="likes">
+              <details open>
+                <summary>general</summary>
+                warm colors, chemistry to an extent, biology (molecular, micro,
+                cell, mycology) though i haven't had the time to study it, cats,
+                painting, drawing, clay, sewing, furries, plushies, cd
+                collecting, piercings
+              </details>
+              <hr />
+              <details open>
+                <summary>music</summary>
+                happy hardcore, bubblegum dance/eurodance, jazz, rock,
+                industrial, etc. ROAR, Pierce the Veil, NIN, TOOL, Machine Girl,
+                Mitski, Glass Beach, The Cure, SOAD, hell just stalk my last.fm
+              </details>
+              <hr />
+              <details open>
+                <summary>games</summary>
+                Splatoon, Pokemon (B&W/B2&W2, ORAS, X&Y, PL:A, PL:Z-A),
+                Cattails: Wildwood Story, i have such a huge backlog to get
+                through oh my god
+              </details>
+              <hr />
+              <details open>
+                <summary>food</summary>
+                strawberries, candied nuts, lychees, green tea, honey, matcha,
+                macaroons, coconut, blueberries, peanut butter, tofu when it's
+                made good
+              </details>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
