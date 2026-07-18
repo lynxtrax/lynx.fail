@@ -1,0 +1,9 @@
+body {
+  color: var(--four);
+}
+h1 {
+  color: var(--secondacc);
+}
+.width {
+  width: 49%;
+}

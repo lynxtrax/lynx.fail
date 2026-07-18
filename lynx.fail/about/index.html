@@ -9,6 +9,128 @@
     <title>about</title>
   </head>
   <body>
-    wip
+    <p><a href="../index.html">back</a></p>
+    <p>
+      wassup :) online i go by lynx. i'm a 20 y/o guy from the USA, midwest
+      area. i like art and try to be creative when i can. a lot of my art
+      focuses on cats, as they are an animal i really love and connect with. i
+      have <a href="../cats/index.html" target="_blank">2 cats</a> myself.
+    </p>
+    <img src="./images/about.png" style="image-rendering: pixelated" />
+    <div id="graphics">
+      <br />
+      <img src="./images/stamps/hate.jpg" height="56" width="99" />
+      <img src="./images/stamps/dorohedoror.png" height="56" width="99" />
+      <img src="./images/stamps/dog.png" height="56" width="99" />
+      <img src="./images/stamps/creature.gif" height="56" width="99" />
+      <img src="./images/stamps/nuclearpower.gif" height="56" width="99" />
+      <img src="./images/stamps/bloodstamp.jpg" height="56" width="99" />
+      <img src="./images/stamps/tappin.gif" height="56" width="99" />
+      <img src="./images/stamps/keyboard.png" height="56" width="99" />
+    </div>
+    <div id="statusbg">
+      <h2>status</h2>
+    </div>
+    <div class="status">
+      <p id="status-details">loading...</p>
+      <div id="status-blob"></div>
+      <span id="side">(via discord)</span>
+    </div>
+    <script src="./discord.js" defer></script>
+    <div id="status">
+      <div id="statuscafe-username">username loading...</div>
+      <div id="statuscafe">
+        <div id="statuscafe-content">statuscafe loading...</div>
+        <p id="mood">
+          i'm currently feeling
+          <a href="https://www.imood.com/users/kittyrave">
+            <img
+              src="https://moods.imood.com/display/uname-kittyrave/fg-c4d237/trans-1/imood.gif"
+              alt="The current mood of kittyrave at www.imood.com"
+            />
+          </a>
+        </p>
+      </div>
+      <script
+        src="https://status.cafe/current-status.js?name=lynx"
+        defer
+      ></script>
+    </div>
+    <div>
+      <div id="clock"></div>
+      <script>
+        function updateClock() {
+          const clockElement = document.getElementById("clock");
+          if (clockElement) {
+            // Force both to en-US to ensure consistent AM/PM
+            const locale = "en-US";
+
+            const localTime = new Date().toLocaleTimeString(locale, {
+              hour: "2-digit",
+              minute: "2-digit",
+              hour12: true,
+            });
+
+            const myTime = new Date().toLocaleString(locale, {
+              timeZone: "America/New_York",
+              hour: "2-digit",
+              minute: "2-digit",
+              hour12: true,
+            });
+
+            clockElement.innerHTML = `
+        <div><b>local time:</b> ${localTime}</div>
+        <div><b>lynx's time:</b> ${myTime}</div>
+      `;
+          }
+        }
+
+        setInterval(updateClock, 60000);
+        updateClock();
+      </script>
+    </div>
+    <div id="music">
+      <p><img src="./images/music.gif" /> last listened to:</p>
+      <div id="listening"></div>
+      <script>
+        // this script is under the MIT license (https://max.nekoweb.org/resources/license.txt)
+
+        const USERNAME = "lynxtrax"; // Put your LastFM username here
+        const BASE_URL = `https://lastfm-last-played.biancarosa.com.br/${USERNAME}/latest-song`;
+
+        const getTrack = async () => {
+          const request = await fetch(BASE_URL);
+          const json = await request.json();
+          let status;
+
+          let isPlaying = json.track["@attr"]?.nowplaying || true;
+
+          if (!isPlaying) {
+            // Trigger if a song isn't playing
+            return;
+          } else {
+            // Trigger if a song is playing
+          }
+
+          // Values:
+          // COVER IMAGE: json.track.image[1]['#text']
+          // TITLE: json.track.name
+          // ARTIST: json.track.artist['#text']
+
+          document.getElementById("listening").innerHTML = `
+                <img src="${json.track.image[2]["#text"]}" height="160" width="160">
+                <div id="trackInfo">
+                <h3 id="trackName">${json.track.name}</h3>
+                <p id="artistName">${json.track.artist["#text"]}</p>
+                </div>
+                `;
+        };
+
+        getTrack();
+        setInterval(() => {
+          getTrack();
+        }, 10000);
+      </script>
+    </div>
   </body>
 </html>

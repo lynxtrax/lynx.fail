@@ -54,7 +54,7 @@
   padding: 0.2rem;
   font-weight: bold;
   background: #7ead41;
-  border: none;
+  border: 2px dashed black;
   overflow: hidden;
   resize: none;
   transition: 0.3s;

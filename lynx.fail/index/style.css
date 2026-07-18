@@ -1,12 +1,6 @@
 #stats span {
   color: var(--fouracc);
 }
-#follow {
-  background: var(--accent);
-  border: 2px dashed var(--black);
-  width: 135px;
-  height: 45px;
-}
 #updates iframe {
   border: 1px solid var(--fouracc);
   height: 220px;
