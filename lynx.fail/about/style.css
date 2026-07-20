@@ -128,3 +128,6 @@ h2 {
 .tooltip:hover .tooltiptext {
   opacity: 1;
 }
+.inline {
+  display: inline-block;
+}

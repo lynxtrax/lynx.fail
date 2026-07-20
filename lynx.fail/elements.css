@@ -54,13 +54,13 @@
   padding: 0.2rem;
   font-weight: bold;
   background: #7ead41;
-  border: 4px dashed black;
+  border: 2px dashed black;
   overflow: hidden;
   resize: none;
   transition: 0.3s;
   margin: 0;
-  width: fit-content;
-  height: fit-content;
+  width: max-content;
+  height: max-content;
 }
 .follow:hover {
   filter: brightness(0.7) contrast(150%);
