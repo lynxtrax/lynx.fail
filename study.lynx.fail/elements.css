@@ -71,6 +71,7 @@
 .post-box .post-date {
   display: inline-block;
   font-weight: bold;
+  color: #c4d237;
 }
 .post-box .post-author::after {
   content: "";
@@ -85,7 +86,7 @@
   display: none;
 }
 .post-box {
-  background: #c24816;
+  background: #191919;
   color: black;
   border: 0.2rem solid black;
   border-radius: 0;
@@ -94,7 +95,7 @@
   padding: 0.5rem;
 }
 .post-box .post-title {
-  color: #c4d237;
+  color: #7ead41;
   text-shadow: 0.1rem 0.2rem black;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -103,10 +104,11 @@
   margin-left: 1rem;
   margin-right: 0.5rem;
   padding: 1rem;
-  background: #c26516;
+  background: #3f3f3f;
+  color: #c4d237;
   margin-bottom: 0;
 }
-.post-box:hover {
+.post-box:hover .post-author,
+.post-box:hover .post-date {
   font-style: italic;
-  box-shadow: inset 0 0 1rem #c26516;
 }
