@@ -1,0 +1,112 @@
+/* 
+    Don't use this file to edit your site style! Create a different CSS file for that.
+    This file defines how custom elements (like sitebox) will look like.
+    Setting CSS that breaks main nekoweb site on purpose is prohibited and may result in ban and site deletion! 
+*/
+
+/* Must start with ".site-box". Change how your website will appear on main nekoweb site: https://lune.dimden.dev/405a44b7e5.png */
+.site-box {
+  text-align: center;
+  background: black;
+  background-image: url(); /* Only nekoweb URLs allowed, use full url to your site like https://example.nekoweb.org/images/coolbg.png */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 30px;
+  font-size: 12px;
+  transition: 0.3s;
+  position: relative;
+}
+.site-box .sitefeature {
+  display: block;
+  border: none;
+  width: 275px;
+  height: 160px;
+  opacity: 1;
+  margin-left: 0;
+  margin-top: 0;
+  background: url(https://lynxtrax.nekoweb.org/study.lynx.fail/assets/images/bookcat4-dithered.png);
+  background-size: cover;
+}
+.site-box .sitefeature .screenshot {
+  display: none;
+}
+.site-box > a > p {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  margin-left: 0.5rem;
+  color: white;
+  font-weight: bold;
+}
+.site-box > a > span {
+  display: none;
+}
+.site-box:hover {
+  transform: scale(104%);
+  font-style: italic;
+}
+
+/* Style for your 'Follow on Nekoweb' button (<iframe src="https://nekoweb.org/frame/follow" frameborder="0" width="170" height="28"></iframe>) */
+.follow {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  padding: 0.2rem;
+  font-weight: bold;
+  background: #7ead41;
+  border: 2px dashed black;
+  overflow: hidden;
+  resize: none;
+  transition: 0.3s;
+  margin: 0;
+  width: max-content;
+  height: max-content;
+}
+.follow:hover {
+  filter: brightness(0.7) contrast(150%);
+}
+.follow:active {
+  opacity: 0.8;
+}
+/* rss box */
+.post-box .post-author,
+.post-box .post-date {
+  display: inline-block;
+  font-weight: bold;
+}
+.post-box .post-author::after {
+  content: "";
+  height: 15px;
+  width: 15px;
+  margin-left: 0.5em;
+  background: url(https://lynxtrax.nekoweb.org/lynx.fail/assets/spiral.gif);
+  background-size: cover;
+  display: inline-block;
+}
+.post-box .post-dot {
+  display: none;
+}
+.post-box {
+  background: #c24816;
+  color: black;
+  border: 0.2rem solid black;
+  border-radius: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  transition: 0.2s;
+  padding: 0.5rem;
+}
+.post-box .post-title {
+  color: #c4d237;
+  text-shadow: 0.1rem 0.2rem black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.post-box .post-description {
+  box-sizing: border-box;
+  margin-left: 1rem;
+  margin-right: 0.5rem;
+  padding: 1rem;
+  background: #c26516;
+  margin-bottom: 0;
+}
+.post-box:hover {
+  font-style: italic;
+  box-shadow: inset 0 0 1rem #c26516;
+}
