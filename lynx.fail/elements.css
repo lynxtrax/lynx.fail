@@ -50,10 +50,10 @@
 /* Style for your 'Follow on Nekoweb' button (<iframe src="https://nekoweb.org/frame/follow" frameborder="0" width="170" height="28"></iframe>) */
 .follow {
   font-family: Arial, Helvetica, sans-serif;
-  color: black;
+  color: #c4d237;
   padding: 0.2rem;
   font-weight: bold;
-  background: #7ead41;
+  background: #191919;
   border: 2px dashed black;
   overflow: hidden;
   resize: none;
@@ -69,6 +69,15 @@
   opacity: 0.8;
 }
 /* rss box */
+.post-box {
+  background: #191919;
+  color: #c4d237;
+  border: 0.2rem solid black;
+  border-radius: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  transition: 0.2s;
+  padding: 0.5rem;
+}
 .post-box .post-author,
 .post-box .post-date {
   display: inline-block;
@@ -86,15 +95,6 @@
 }
 .post-box .post-dot {
   display: none;
-}
-.post-box {
-  background: #191919;
-  color: black;
-  border: 0.2rem solid black;
-  border-radius: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  transition: 0.2s;
-  padding: 0.5rem;
 }
 .post-box .post-title {
   color: #7ead41;
