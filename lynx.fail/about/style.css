@@ -87,7 +87,7 @@ h2 {
 }
 #listening {
   display: flex;
-  color: var(--black);
+  color: var(--white);
 }
 #listening img {
   height: 160px;
