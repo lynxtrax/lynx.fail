@@ -1,9 +1,9 @@
-body {
-  color: var(--four);
-}
 h1 {
-  color: var(--secondacc);
+  color: var(--accent);
 }
 .width {
   width: 49%;
+}
+img {
+  filter: sepia(30%);
 }

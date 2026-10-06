@@ -50,11 +50,11 @@
 /* Style for your 'Follow on Nekoweb' button (<iframe src="https://nekoweb.org/frame/follow" frameborder="0" width="170" height="28"></iframe>) */
 .follow {
   font-family: Arial, Helvetica, sans-serif;
-  color: #c4d237;
+  color: #7ead41;
   padding: 0.2rem;
   font-weight: bold;
-  background: #191919;
-  border: 2px dashed black;
+  background: #3e2518;
+  border: 3px dashed #100c0a;
   overflow: hidden;
   resize: none;
   transition: 0.3s;
@@ -70,11 +70,11 @@
 }
 /* rss box */
 .post-box {
-  background: #191919;
-  color: #c4d237;
-  border: 0.2rem solid black;
+  background: #100c0a;
+  color: #debf91;
+  border: 0.2rem solid #3e2518;
   border-radius: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   transition: 0.2s;
   padding: 0.5rem;
 }
@@ -82,7 +82,7 @@
 .post-box .post-date {
   display: inline-block;
   font-weight: bold;
-  color: #c4d237;
+  color: #c26516;
 }
 .post-box .post-author::after {
   content: "";
@@ -99,15 +99,15 @@
 .post-box .post-title {
   color: #7ead41;
   text-shadow: 0.1rem 0.2rem black;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .post-box .post-description {
   box-sizing: border-box;
   margin-left: 1rem;
   margin-right: 0.5rem;
   padding: 1rem;
-  background: #3f3f3f;
-  color: #c4d237;
+  background: #3e2518;
+  color: #debf91;
   margin-bottom: 0;
 }
 .post-box:hover .post-author,

@@ -1,6 +1,3 @@
-body {
-  color: var(--tertiary);
-}
 h1,
 h2,
 h3 {
@@ -11,7 +8,7 @@ h2 span {
 }
 #dim {
   margin: 0;
-  color: var(--secondary);
+  color: var(--tertiary);
 }
 #top h3 {
   margin: 1rem 0;
@@ -32,5 +29,5 @@ hr {
 }
 #details p {
   margin: 0;
-  color: var(--thirdacc);
+  color: var(--two);
 }

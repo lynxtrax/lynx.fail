@@ -5,7 +5,7 @@ a:hover {
   color: var(--secondacc);
 }
 body {
-  color: var(--tertiary);
+  color: var(--four);
 }
 img {
   filter: grayscale(100%);

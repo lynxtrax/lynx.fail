@@ -1,13 +1,13 @@
 body {
-  background: var(--black);
-  color: var(--tertiary);
+  background: var(--base);
+  color: var(--four);
 }
 a {
-  color: var(--secondacc);
+  color: var(--accent);
   transition: 0.2s;
 }
 a:hover {
-  color: var(--accent);
+  color: var(--secondacc);
 }
 #otherSites {
   margin: 0 auto;
@@ -15,17 +15,29 @@ a:hover {
   text-align: center;
 }
 section {
-  background: var(--base);
-  color: var(--white);
+  background: var(--secondary);
+  color: var(--lightthree);
   height: fit-content;
   overflow: auto;
   padding: 0.5rem;
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
+#fanlisting img,
+#otherSites img {
+  filter: sepia(30%);
+  transition: 0.2s;
+}
+#otherSites img:hover {
+  filter: none;
+}
 section h1 a {
   font-size: 10pt;
-  color: var(--accent);
+  color: var(--two);
+}
+section h1 a:hover {
+  font-size: 10pt;
+  color: var(--thirdacc);
 }
 ul {
   list-style-type: none;

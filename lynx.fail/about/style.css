@@ -1,28 +1,28 @@
 body {
-  color: var(--four);
+  color: var(--lightthree);
 }
 a,
 #clock,
 .secondacc {
-  color: var(--secondacc);
+  color: var(--accent);
 }
 a:hover {
-  color: var(--accent);
+  color: var(--secondacc);
 }
 h1,
 h2 {
-  color: var(--white);
+  color: var(--base);
   padding-left: 2px;
 }
 #statusbg {
-  background: linear-gradient(to right, var(--secondary), #00000000);
+  background: linear-gradient(to right, var(--fouracc), #00000000);
   width: 100%;
 }
 #status {
   margin-top: 0.5rem;
 }
 #statuscafe {
-  background: var(--base);
+  background: var(--secondary);
   padding: 0.5rem;
   margin: 0.5rem;
   border: 2px dotted var(--black);
@@ -62,10 +62,11 @@ h2 {
 /* discord */
 #graphics {
   text-align: center;
+  filter: sepia(30%);
 }
 #now {
   transition: 0.2s;
-  box-shadow: 7px 7px var(--black);
+  box-shadow: 7px 7px var(--base);
   width: 305px;
   height: 220px;
 }
@@ -79,20 +80,20 @@ h2 {
   padding: 0.2rem;
   margin: 0.5rem;
   margin-bottom: 0;
-  border: 2px dotted var(--black);
-  color: var(--four);
+  border: 2px dotted var(--base);
+  color: var(--lightthree);
 }
 #music p {
   margin: 0;
 }
 #listening {
   display: flex;
-  color: var(--white);
+  color: var(--lighttwo);
 }
 #listening img {
   height: 160px;
-  filter: grayscale(80%);
-  border: 2px solid var(--black);
+  filter: sepia(50%);
+  border: 2px solid var(--base);
 }
 #trackInfo {
   margin-left: 0.5rem;
@@ -115,8 +116,8 @@ h2 {
   opacity: 0;
   transition: opacity 0.2s;
   width: 100px;
-  background-color: black;
-  color: #fff;
+  background-color: var(--accent);
+  color: var(--base);
   text-align: center;
   border-radius: 2px;
   padding: 5px 0;

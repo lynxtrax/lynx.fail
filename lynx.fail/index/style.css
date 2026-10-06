@@ -1,8 +1,8 @@
 #stats span {
-  color: var(--fouracc);
+  color: var(--accent);
 }
 #updates iframe {
-  border: 1px solid var(--fouracc);
+  border: 2px solid var(--base);
   height: 220px;
   width: 100%;
   margin-top: 5px;
