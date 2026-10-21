@@ -2,12 +2,16 @@
   box-sizing: border-box;
 }
 :root {
-  --base: #191919;
-  --secondary: #3f3f3f;
-  --tertiary: #6c6c6c;
+  --base: #100c0a;
+  --secondary: #3d2417;
+  --tertiary: #623d2a;
+  --four: #906c59;
+  --lightone: #ffeccf;
+  --lighttwo: #f1dcbd;
+  --lightthree: #debf91;
   --accent: #7ead41;
   --secondacc: #c4d237;
-  --inbetween: #f0db36;
+  --inbetween: #ffe014;
   --two: #df9b35;
   --thirdacc: #c26516;
   --fouracc: #c24816;
@@ -16,7 +20,7 @@
 }
 body {
   background: var(--base);
-  color: var(--accent);
+  color: var(--lightone);
   font-size: 100%;
   font-family: Arial, Helvetica, sans-serif;
   animation: load 0.4s ease-out;
@@ -24,13 +28,13 @@ body {
   margin: 1rem;
 }
 a {
-  color: var(--inbetween);
+  color: var(--accent);
   transition: 0.2s;
   text-decoration: dotted underline;
 }
 a:hover {
   font-style: italic;
-  color: var(--two);
+  color: var(--secondacc);
 }
 img {
   max-width: 100%;
