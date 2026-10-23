@@ -4,8 +4,14 @@
 .flex div {
   width: 100%;
 }
+#comments {
+  z-index: 5;
+}
 @media screen and (max-width: 800px) {
   .flex {
     flex-wrap: wrap;
+  }
+  #item-counter {
+    margin-top: 70px;
   }
 }
