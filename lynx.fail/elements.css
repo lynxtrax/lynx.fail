@@ -82,7 +82,7 @@
 .post-box .post-date {
   display: inline-block;
   font-weight: bold;
-  color: #c26516;
+  color: #7ead41;
 }
 .post-box .post-author::after {
   content: "";
@@ -97,7 +97,7 @@
   display: none;
 }
 .post-box .post-title {
-  color: #7ead41;
+  color: #c26516;
   text-shadow: 0.1rem 0.2rem black;
   font-family: Arial, Helvetica, sans-serif;
 }
