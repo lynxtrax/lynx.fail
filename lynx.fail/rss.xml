@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet href="rss.xsl" type="text/xsl"?>
+<?xml-stylesheet type="text/css" href="./assets/rss.css"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <script src="./assets/rss-html-transformer.js" xmlns="http://www.w3.org/1999/xhtml"></script>
     <channel>
         <title>lynx.fail</title>
         <description>blog posts</description>
         <link>https://lynx.fail</link>
-        <atom:link href="http://lynx.fail/rss.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://lynx.fail/rss.xml" rel="self" type="application/rss+xml" />
         <language>en-us</language>
         
         <item>
