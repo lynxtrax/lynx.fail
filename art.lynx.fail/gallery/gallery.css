@@ -166,7 +166,7 @@ footer {
 /*  */
 
 #lightbox {
-  z-index: 1;
+  z-index: 2;
   position: fixed;
   top: 0;
   left: 0;
@@ -182,7 +182,7 @@ footer {
 }
 
 #close-btn {
-  z-index: 2;
+  z-index: 3;
   position: absolute;
   top: 1em;
   right: 1em;
