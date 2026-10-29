@@ -2,15 +2,15 @@
 <?xml-stylesheet href="rss.xsl" type="text/xsl"?>
 <rss version="2.0">
     <channel>
-        <title>lynx's art feed!</title>
-        <description>updates for my art and site!</description>
+        <title>art.lynx.fail</title>
+        <description>gallery updates, commission openings, etc</description>
         <link>https://art.lynx.fail</link>
         <item>
-            <title>starting</title>
-            <description>temp index set up, i may start on this site soon..!</description>
-            <link>https://art.lynx.fail</link>
+            <title>setup</title>
+            <description>2023-2026 works uploaded and tagged, RSS set up</description>
+            <link>https://art.lynx.fail/gallery/</link>
             <guid>post-1</guid>
-            <pubDate>Mon 23 Mar 2026, 09:19 -0500</pubDate>
+            <pubDate>Thu, 29 Oct 2026 04:07 -0500</pubDate>
         </item>
     </channel>
 </rss>

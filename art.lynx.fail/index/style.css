@@ -1,0 +1,12 @@
+body {
+  max-width: 480px;
+}
+#updates iframe {
+  border: 2px solid var(--base);
+  height: 220px;
+  width: 100%;
+  margin-top: 5px;
+}
+hr {
+  border: 0.08rem dashed var(--secondary);
+}

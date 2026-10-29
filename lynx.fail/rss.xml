@@ -1,67 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet href="rss.xsl" type="text/xsl"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>lynx's rss feed!</title>
+        <title>lynx.fail</title>
         <description>blog posts</description>
         <link>https://lynx.fail</link>
+        <atom:link href="http://lynx.fail/rss.xml" rel="self" type="application/rss+xml" />
+        <language>en-us</language>
+        
         <item>
             <title>on being an imperfect perfectionist</title>
             <description>kind of just talking about my high expectations for myself and the result of that.</description>
             <link>https://lynx.fail/blog/posts/post7</link>
-            <guid>post-7</guid>
-            <pubDate>Fri 23 Oct 2026, 14:15 -0500</pubDate>
+            <guid isPermaLink="false">post-8</guid>
+            <pubDate>Fri, 23 Oct 2026 14:15 -0500</pubDate>
         </item>
         <item>
             <title>locking IN!!</title>
             <description>getting my thoughts out there on how i want to improve myself after being tired of being depressed. yay!</description>
             <link>https://lynx.fail/blog/posts/post6</link>
-            <guid>post-6</guid>
-            <pubDate>Tue 21 July 2026, 05:42 -0500</pubDate>
+            <guid isPermaLink="false">post-7</guid>
+            <pubDate>Tue, 21 July 2026 05:42 -0500</pubDate>
         </item>
         <item>
             <title>i've lost my 'spark'</title>
             <description>lynx rambles about being depressed yet again</description>
             <link>https://lynx.fail/blog/posts/post5</link>
-            <guid>post-6</guid>
-            <pubDate>Tue 24 Mar 2026, 16:20 -0500</pubDate>
+            <guid isPermaLink="false">post-6</guid>
+            <pubDate>Tue, 24 Mar 2026 16:20 -0500</pubDate>
         </item>
         <item>
             <title>i got a 3DS!</title>
             <description>yapping about my 3DS i bought and modding it yayy!</description>
             <link>https://lynx.fail/blog/posts/post4</link>
-            <guid>post-5</guid>
-            <pubDate>Sat 28 Feb 2026, 10:47 -0500</pubDate>
+            <guid isPermaLink="false">post-5</guid>
+            <pubDate>Sat, 28 Feb 2026 10:47 -0500</pubDate>
         </item>
          <item>
             <title>2026 new year entry</title>
             <description>joined 32-bit cafe's event for the new year. just writing about how my past year has been, and what i strive to do for this year.</description>
             <link>https://lynx.fail/misc/32bitcafe/2026NewYear/</link>
-            <guid>post-4</guid>
-            <pubDate>Mon 19 Jan 2026, 23:19:00 -0500</pubDate>
+            <guid isPermaLink="false">post-4</guid>
+            <pubDate>Mon, 19 Jan 2026 23:19:00 -0500</pubDate>
         </item>
         <item>
             <title>secret shrine-ta</title>
             <description>i participated in a secret santa event for web shrines! i created a kandi shrine for lemonadehammer on neocities. check it out!</description>
             <link>https://lynx.fail/misc/shrineta/2025/</link>
-            <guid>post-3</guid>
-            <pubDate>Tue 23 Dec 2025, 11:31:00 -0500</pubDate>
+            <guid isPermaLink="false">post-3</guid>
+            <pubDate>Tue, 23 Dec 2025 11:31:00 -0500</pubDate>
         </item>
         <item>
             <title>aphantasia</title>
             <description>new blog post - I experience something called Aphantasia and it affects my
                   life to some degree.</description>
             <link>https://lynx.fail/blog/posts/post3</link>
-            <guid>post-2</guid>
-            <pubDate>Tue 11 Nov 2025, 23:37:00 -0500</pubDate>
+            <guid isPermaLink="false">post-2</guid>
+            <pubDate>Tue, 11 Nov 2025 23:37:00 -0500</pubDate>
         </item>
         <item>
             <title>100 webmaster questions</title>
             <description>saw quite a few sites doing these questions by mouseling.net and decided to do my take on it! also added a few buttons
             and fixed my sitebox.</description>
             <link>https://lynx.fail/blog/posts/post2</link>
-            <guid>post-1</guid>
-            <pubDate>Tue 04 Nov 2025, 21:26:00 -0500</pubDate>
+            <guid isPermaLink="false">post-1</guid>
+            <pubDate>Tue, 04 Nov 2025 21:26:00 -0500</pubDate>
         </item>
     </channel>
 </rss>
