@@ -8,13 +8,26 @@ body {
   color: var(--four);
 }
 img {
-  filter: grayscale(100%);
+  filter: sepia(50%);
 }
 h1,
 h3 {
   margin: 0;
   padding: 0;
 }
+h1,
+h2 {
+  color: var(--lighttwo);
+}
+h3 {
+  color: var(--lightthree);
+}
 hr {
   border: 0.1rem solid var(--accent);
+}
+.divider {
+  width: 80%;
+  border: 0.08rem dashed var(--secondary);
+  margin: 0;
+  padding: 0;
 }
