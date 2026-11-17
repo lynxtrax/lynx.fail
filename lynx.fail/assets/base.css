@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 :root {
-  --base: #100c0a;
+  --base: #0c0805;
   --secondary: #3e2518;
   --tertiary: #623d2a;
   --four: #906c59;
@@ -11,7 +11,7 @@
   --lightthree: #debf91;
   --accent: #7ead41;
   --secondacc: #c4d237;
-  --inbetween: #ffe014;
+  --inbetween: #ffc908;
   --two: #df9b35;
   --thirdacc: #c26516;
   --fouracc: #c24816;

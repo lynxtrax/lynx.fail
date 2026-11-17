@@ -1,0 +1,13 @@
+h1 {
+  color: var(--thirdacc);
+}
+.width {
+  width: 49%;
+}
+img {
+  filter: sepia(30%);
+  transition: 0.2s;
+}
+img:hover {
+  filter: none;
+}

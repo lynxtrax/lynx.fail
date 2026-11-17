@@ -1,13 +1,9 @@
 body {
   color: var(--lightthree);
 }
-a,
 #clock,
 .secondacc {
-  color: var(--accent);
-}
-a:hover {
-  color: var(--secondacc);
+  color: var(--two);
 }
 h1,
 h2 {
@@ -15,7 +11,7 @@ h2 {
   padding-left: 2px;
 }
 #statusbg {
-  background: linear-gradient(to right, var(--fouracc), #00000000);
+  background: linear-gradient(to right, var(--thirdacc), #00000000);
   width: 100%;
 }
 #status {
@@ -58,22 +54,12 @@ h2 {
   font-size: 9pt;
   margin-top: 2px;
   margin-left: 2px;
+  color: var(--four);
 }
 /* discord */
 #graphics {
   text-align: center;
   filter: sepia(30%);
-}
-#now {
-  transition: 0.2s;
-  box-shadow: 7px 7px var(--base);
-  width: 305px;
-  height: 220px;
-}
-#now iframe {
-  border: none;
-  width: 305px;
-  height: 220px;
 }
 #music {
   background: var(--secondary);
@@ -88,7 +74,6 @@ h2 {
 }
 #listening {
   display: flex;
-  color: var(--lighttwo);
 }
 #listening img {
   height: 160px;
@@ -104,6 +89,7 @@ h2 {
 }
 #artistName {
   margin: 0;
+  color: var(--four);
 }
 .tooltip {
   position: relative;
@@ -116,7 +102,7 @@ h2 {
   opacity: 0;
   transition: opacity 0.2s;
   width: 100px;
-  background-color: var(--accent);
+  background-color: var(--two);
   color: var(--base);
   text-align: center;
   border-radius: 2px;

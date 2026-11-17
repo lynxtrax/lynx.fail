@@ -1,20 +1,22 @@
-body {
-  background: linear-gradient(var(--base), var(--black)), var(--black);
-  color: grey;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 98vh;
-}
 a {
-  color: var(--two);
-  text-decoration: dotted underline;
-  transition: 0.2s;
+  color: var(--lightthree);
+}
+ul ul a {
+  color: var(--four);
+}
+ul ul ul a {
+  color: var(--tertiary);
+}
+ul ul ul ul a {
+  color: var(--secondary);
 }
 a:hover {
   color: var(--thirdacc);
-  font-style: italic;
 }
-h1 {
-  color: white;
+
+ul {
+  padding-left: 15px;
+}
+ul ul {
+  padding-left: 30px;
 }
